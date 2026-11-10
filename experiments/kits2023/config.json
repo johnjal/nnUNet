@@ -1,0 +1,20 @@
+{
+  "execution_enabled": false,
+  "storage_root": "/CHANGE_ME/nnunet-kits2023",
+  "source_dataset": "/CHANGE_ME/kits23/dataset",
+  "run_id": "kits2023-baseline-v1",
+  "expected_git_commit": "7bb926124ce58a611fa53d3510c714726c800031",
+  "dataset_id": 220,
+  "dataset_name": "Dataset220_KiTS2023",
+  "expected_cases": 489,
+  "configuration": "3d_fullres",
+  "trainer": "nnUNetTrainer",
+  "plans": "nnUNetPlans",
+  "gpu": "0",
+  "preprocessing_workers": 4,
+  "augmentation_workers": 4,
+  "compile": false,
+  "folds": [0],
+  "nsd_tolerance_mm": 2.0,
+  "reproduction_notes": "Current repository baseline; historical paper commit, exact author splits, checkpoint/TTA and metric aggregation equivalence remain unverified. GPU differs from paper (3090 vs A100)."
+}

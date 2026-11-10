@@ -1,0 +1,6 @@
+config.server.json
+__pycache__/
+.ipynb_checkpoints/
+*.executed.ipynb
+
+!requirements-server.txt
