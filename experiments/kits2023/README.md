@@ -9,15 +9,18 @@
 필요 조건: Linux, NVIDIA driver(CUDA 12.8 wheel 지원), Python 3.11 + venv, git, tmux. RAM/디스크 필요량은 전처리와 worker 수에 따라 달라집니다. 데이터 원본, 변환 복사본, 전처리, 체크포인트를 저장할 충분한 외부 디스크를 준비하세요. 노트북에서 실제 여유 공간을 확인합니다.
 
 1. **이 experiments 디렉터리가 포함된 전체 저장소**를 서버로 복사하거나 해당 변경을 포함한 Git 커밋을 checkout합니다. 공식 upstream만 새로 clone하면 이 실험 파일들은 포함되지 않습니다.
-2. 서버에서 저장 경로를 하나 지정해 환경을 만듭니다.
+2. 서버의 **기존 Python 3.11 venv**를 활성화하고 Jupyter를 실행합니다. 새 venv는 만들지 않습니다.
 
 ```bash
-bash experiments/kits2023/scripts/setup_server.sh /data/kits2023-reproduction
-source /data/kits2023-reproduction/venv/bin/activate
-jupyter lab
+source /path/to/existing-venv/bin/activate
+# Jupyter가 아직 없을 때만 기존 venv에 설치:
+python -m pip install jupyterlab ipykernel
+python -m jupyter lab
 ```
 
-설치 스크립트는 서버 CUDA를 검사하고 `config.server.json`을 생성합니다. 해당 설정만 실행을 허용합니다. 기본 `config.json`은 항상 비활성화 상태로 배포합니다. 학습이 자동으로 시작되지는 않습니다. 기존 서버 설정은 덮어쓰지 않습니다. Python/드라이버 설치는 OS 관리자 환경에 맞게 먼저 진행하세요.
+Jupyter에서 기존 venv의 커널을 선택하고 `01_prepare.ipynb`를 엽니다. 앞부분의 `STORAGE_ROOT`만 서버 경로로 수정한 뒤 셀을 순서대로 실행합니다. Python/드라이버/git/tmux는 서버에 미리 설치되어 있어야 합니다.
+
+01번 노트북의 0번 단계가 서버 확인, 현재 venv에 PyTorch·nnU-Net·의존성 설치, GPU 검증, `config.server.json` 생성, 패키지 lock 기록까지 처리합니다. 현재 venv의 패키지가 변경됩니다. 기본 `config.json`은 실행 비활성화 상태로 배포하며 기존 서버 설정은 덮어쓰지 않습니다. 설치 단계만으로 학습이 시작되지는 않습니다. 환경 설치 후 다음 실행에서는 0번 단계를 건너뛸 수 있습니다.
 
 3. 다음 노트북을 순서대로 실행합니다.
 
@@ -48,7 +51,6 @@ jupyter lab
 
 ```text
 storage_root/
-  venv/                         # 서버 전용 환경
   cache/                        # pip, matplotlib 등
   source/kits23/dataset/         # 공식 다운로드 + manifest
   nnUNet_raw/Dataset220_KiTS2023/
@@ -79,9 +81,9 @@ storage_root/
 - 케이스별 점수를 영역별로 평균 → fold 내 영역 평균 → fold 동일 가중치 평균. 양쪽 모두 빈 영역은 NaN으로 제외하고, 한쪽만 비면 0점 처리.
 - `reports/comparison-folds-*.json`은 전체 5-fold 여부와 재현 조건 차이를 명시합니다.
 
-현재 베이스 코드는 nnU-Net 2.8.1, 작성 시 commit `7bb926124ce58a611fa53d3510c714726c800031`입니다. 서버 설치 시 실제 checkout 커밋을 config에 고정하고 실행 때 검사합니다. 학습 코드의 당시 버전, 저자 원본 split 파일, 세부 checkpoint/TTA/집계 조건의 완전한 일치는 확인되지 않았습니다. 따라서 **논문 프로토콜을 따른 현재 코드의 재현 시도**이며 수치의 완전 일치를 보장하지 않습니다. 무작위성 및 3090/A100 차이도 존재합니다. 기본 split은 nnU-Net의 seed 12345 KFold입니다.
+현재 베이스 코드는 nnU-Net 2.8.1, 작성 시 commit `7bb926124ce58a611fa53d3510c714726c800031`입니다. 노트북의 서버 설정 생성 시 실제 checkout 커밋을 config에 고정하고 실행 때 검사합니다. 학습 코드의 당시 버전, 저자 원본 split 파일, 세부 checkpoint/TTA/집계 조건의 완전한 일치는 확인되지 않았습니다. 따라서 **논문 프로토콜을 따른 현재 코드의 재현 시도**이며 수치의 완전 일치를 보장하지 않습니다. 무작위성 및 3090/A100 차이도 존재합니다. 기본 split은 nnU-Net의 seed 12345 KFold입니다.
 
-서버 bootstrap은 PyTorch 2.8.0 CUDA12.8을 고정하고 나머지 의존성은 설치 후 `environment.lock.txt`와 실험 manifest에 동결 기록합니다. 다른 서버의 정확한 패키지 버전 복원을 위해 첫 서버의 lock을 함께 보관하세요. editable 저장소 경로가 바뀌면 lock의 `-e` 경로를 새 checkout으로 바꾸고 CUDA torch index를 동일하게 지정하세요. 이 lock은 논문 당시 환경 lock이 아닙니다.
+01번 노트북의 설치 단계는 PyTorch 2.8.0 CUDA12.8을 고정하고 나머지 의존성은 설치 후 `environment.lock.txt`와 실험 manifest에 동결 기록합니다. 다른 서버의 정확한 패키지 버전 복원을 위해 첫 서버의 lock을 함께 보관하세요. editable 저장소 경로가 바뀌면 lock의 `-e` 경로를 새 checkout으로 바꾸고 CUDA torch index를 동일하게 지정하세요. 이 lock은 논문 당시 환경 lock이 아닙니다.
 
 공식 논문 코드 링크: https://papers.miccai.org/miccai-2024/562-Paper2847.html
 
