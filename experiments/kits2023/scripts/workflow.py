@@ -59,8 +59,15 @@ def guard(c):
     os.environ.update(environment(c))  # Set before importing nnUNet or torch.
     import importlib.util
     spec = importlib.util.find_spec('nnunetv2')
-    if spec is None or Path(spec.origin).resolve().parent != REPO/'nnunetv2':
-        raise RuntimeError('Install this checkout with pip install -e . in the notebook kernel environment')
+    origin = getattr(spec, 'origin', None)
+    if origin is None or Path(origin).resolve().parent != REPO/'nnunetv2':
+        raise RuntimeError(
+            f'nnUNet import path mismatch. Kernel Python: {sys.executable}; '
+            f'found: {origin}; expected: {REPO / "nnunetv2" / "__init__.py"}. '
+            'If editable installation just finished, restart the notebook kernel and run '
+            'from section 1 (load experiment configuration), skipping installation. '
+            'Otherwise install this checkout with this kernel Python: python -m pip install -e REPO.'
+        )
     import torch
     if not torch.cuda.is_available():
         raise RuntimeError('A CUDA GPU is required; CPU/MPS fallback is intentionally disabled')
