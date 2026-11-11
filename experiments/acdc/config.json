@@ -1,0 +1,23 @@
+{
+  "execution_enabled": false,
+  "storage_root": "/CHANGE_ME/acdc-data",
+  "source_dataset": "/CHANGE_ME/acdc-data/metadata/acdc",
+  "run_id": "acdc-baseline-v1",
+  "expected_git_commit": "1baa71f09d7514b972b4710b0556f25e032ece21",
+  "dataset_id": 27,
+  "dataset_name": "Dataset027_ACDC",
+  "expected_cases": 200,
+  "configuration": "3d_fullres",
+  "trainer": "nnUNetTrainer",
+  "plans": "nnUNetPlans",
+  "gpu": "0",
+  "preprocessing_workers": 4,
+  "augmentation_workers": 4,
+  "compile": false,
+  "folds": [
+    0
+  ],
+  "nsd_tolerance_mm": 2.0,
+  "reproduction_notes": "Current-code ACDC baseline; 100 training patients / 200 ED-ES volumes. Official converter patient-grouped split (seed 1234); exact paper split and historical environment unverified. RTX3090 differs from paper A100.",
+  "minimum_free_gib": 5
+}

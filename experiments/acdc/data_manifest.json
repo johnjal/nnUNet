@@ -1,0 +1,2807 @@
+{
+  "source": "ACDC official CREATIS Girder",
+  "training_folder_id": "63721d7073e9f0047faa0525",
+  "total_bytes": 115805231,
+  "files": [
+    {
+      "patient": "patient001",
+      "name": "patient001_frame01.nii.gz",
+      "item_id": "63721d7473e9f0047faa0533",
+      "size": 551178,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7473e9f0047faa0533/download"
+    },
+    {
+      "patient": "patient001",
+      "name": "patient001_frame01_gt.nii.gz",
+      "item_id": "63721d7473e9f0047faa0537",
+      "size": 6596,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7473e9f0047faa0537/download"
+    },
+    {
+      "patient": "patient001",
+      "name": "patient001_frame12.nii.gz",
+      "item_id": "63721d7473e9f0047faa053b",
+      "size": 552456,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7473e9f0047faa053b/download"
+    },
+    {
+      "patient": "patient001",
+      "name": "patient001_frame12_gt.nii.gz",
+      "item_id": "63721d7473e9f0047faa053f",
+      "size": 6017,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7473e9f0047faa053f/download"
+    },
+    {
+      "patient": "patient002",
+      "name": "patient002_frame01.nii.gz",
+      "item_id": "63721d7573e9f0047faa0550",
+      "size": 612701,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa0550/download"
+    },
+    {
+      "patient": "patient002",
+      "name": "patient002_frame01_gt.nii.gz",
+      "item_id": "63721d7573e9f0047faa0554",
+      "size": 7259,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa0554/download"
+    },
+    {
+      "patient": "patient002",
+      "name": "patient002_frame12.nii.gz",
+      "item_id": "63721d7573e9f0047faa0558",
+      "size": 614016,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa0558/download"
+    },
+    {
+      "patient": "patient002",
+      "name": "patient002_frame12_gt.nii.gz",
+      "item_id": "63721d7573e9f0047faa055c",
+      "size": 6485,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa055c/download"
+    },
+    {
+      "patient": "patient003",
+      "name": "patient003_frame01.nii.gz",
+      "item_id": "63721d7573e9f0047faa056d",
+      "size": 573937,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa056d/download"
+    },
+    {
+      "patient": "patient003",
+      "name": "patient003_frame01_gt.nii.gz",
+      "item_id": "63721d7573e9f0047faa0571",
+      "size": 7551,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa0571/download"
+    },
+    {
+      "patient": "patient003",
+      "name": "patient003_frame15.nii.gz",
+      "item_id": "63721d7573e9f0047faa0575",
+      "size": 575171,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa0575/download"
+    },
+    {
+      "patient": "patient003",
+      "name": "patient003_frame15_gt.nii.gz",
+      "item_id": "63721d7573e9f0047faa0579",
+      "size": 7354,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa0579/download"
+    },
+    {
+      "patient": "patient004",
+      "name": "patient004_frame01.nii.gz",
+      "item_id": "63721d7573e9f0047faa058a",
+      "size": 744821,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7573e9f0047faa058a/download"
+    },
+    {
+      "patient": "patient004",
+      "name": "patient004_frame01_gt.nii.gz",
+      "item_id": "63721d7673e9f0047faa058e",
+      "size": 6956,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa058e/download"
+    },
+    {
+      "patient": "patient004",
+      "name": "patient004_frame15.nii.gz",
+      "item_id": "63721d7673e9f0047faa0592",
+      "size": 747940,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa0592/download"
+    },
+    {
+      "patient": "patient004",
+      "name": "patient004_frame15_gt.nii.gz",
+      "item_id": "63721d7673e9f0047faa0596",
+      "size": 6805,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa0596/download"
+    },
+    {
+      "patient": "patient005",
+      "name": "patient005_frame01.nii.gz",
+      "item_id": "63721d7673e9f0047faa05a7",
+      "size": 553454,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05a7/download"
+    },
+    {
+      "patient": "patient005",
+      "name": "patient005_frame01_gt.nii.gz",
+      "item_id": "63721d7673e9f0047faa05ab",
+      "size": 7857,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05ab/download"
+    },
+    {
+      "patient": "patient005",
+      "name": "patient005_frame13.nii.gz",
+      "item_id": "63721d7673e9f0047faa05af",
+      "size": 551539,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05af/download"
+    },
+    {
+      "patient": "patient005",
+      "name": "patient005_frame13_gt.nii.gz",
+      "item_id": "63721d7673e9f0047faa05b3",
+      "size": 7180,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05b3/download"
+    },
+    {
+      "patient": "patient006",
+      "name": "patient006_frame01.nii.gz",
+      "item_id": "63721d7673e9f0047faa05c4",
+      "size": 785597,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05c4/download"
+    },
+    {
+      "patient": "patient006",
+      "name": "patient006_frame01_gt.nii.gz",
+      "item_id": "63721d7673e9f0047faa05c8",
+      "size": 6803,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05c8/download"
+    },
+    {
+      "patient": "patient006",
+      "name": "patient006_frame16.nii.gz",
+      "item_id": "63721d7673e9f0047faa05cc",
+      "size": 788545,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05cc/download"
+    },
+    {
+      "patient": "patient006",
+      "name": "patient006_frame16_gt.nii.gz",
+      "item_id": "63721d7673e9f0047faa05d0",
+      "size": 6344,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7673e9f0047faa05d0/download"
+    },
+    {
+      "patient": "patient007",
+      "name": "patient007_frame01.nii.gz",
+      "item_id": "63721d7773e9f0047faa05e1",
+      "size": 516920,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa05e1/download"
+    },
+    {
+      "patient": "patient007",
+      "name": "patient007_frame01_gt.nii.gz",
+      "item_id": "63721d7773e9f0047faa05e5",
+      "size": 6052,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa05e5/download"
+    },
+    {
+      "patient": "patient007",
+      "name": "patient007_frame07.nii.gz",
+      "item_id": "63721d7773e9f0047faa05e9",
+      "size": 516940,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa05e9/download"
+    },
+    {
+      "patient": "patient007",
+      "name": "patient007_frame07_gt.nii.gz",
+      "item_id": "63721d7773e9f0047faa05ed",
+      "size": 5950,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa05ed/download"
+    },
+    {
+      "patient": "patient008",
+      "name": "patient008_frame01.nii.gz",
+      "item_id": "63721d7773e9f0047faa05fe",
+      "size": 626172,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa05fe/download"
+    },
+    {
+      "patient": "patient008",
+      "name": "patient008_frame01_gt.nii.gz",
+      "item_id": "63721d7773e9f0047faa0602",
+      "size": 6115,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa0602/download"
+    },
+    {
+      "patient": "patient008",
+      "name": "patient008_frame13.nii.gz",
+      "item_id": "63721d7773e9f0047faa0606",
+      "size": 626731,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa0606/download"
+    },
+    {
+      "patient": "patient008",
+      "name": "patient008_frame13_gt.nii.gz",
+      "item_id": "63721d7773e9f0047faa060a",
+      "size": 5831,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa060a/download"
+    },
+    {
+      "patient": "patient009",
+      "name": "patient009_frame01.nii.gz",
+      "item_id": "63721d7773e9f0047faa061b",
+      "size": 677795,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa061b/download"
+    },
+    {
+      "patient": "patient009",
+      "name": "patient009_frame01_gt.nii.gz",
+      "item_id": "63721d7773e9f0047faa061f",
+      "size": 6889,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa061f/download"
+    },
+    {
+      "patient": "patient009",
+      "name": "patient009_frame13.nii.gz",
+      "item_id": "63721d7773e9f0047faa0623",
+      "size": 672072,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa0623/download"
+    },
+    {
+      "patient": "patient009",
+      "name": "patient009_frame13_gt.nii.gz",
+      "item_id": "63721d7773e9f0047faa0627",
+      "size": 6668,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7773e9f0047faa0627/download"
+    },
+    {
+      "patient": "patient010",
+      "name": "patient010_frame01.nii.gz",
+      "item_id": "63721d7873e9f0047faa0638",
+      "size": 643759,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0638/download"
+    },
+    {
+      "patient": "patient010",
+      "name": "patient010_frame01_gt.nii.gz",
+      "item_id": "63721d7873e9f0047faa063c",
+      "size": 6648,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa063c/download"
+    },
+    {
+      "patient": "patient010",
+      "name": "patient010_frame13.nii.gz",
+      "item_id": "63721d7873e9f0047faa0640",
+      "size": 658881,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0640/download"
+    },
+    {
+      "patient": "patient010",
+      "name": "patient010_frame13_gt.nii.gz",
+      "item_id": "63721d7873e9f0047faa0644",
+      "size": 6085,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0644/download"
+    },
+    {
+      "patient": "patient011",
+      "name": "patient011_frame01.nii.gz",
+      "item_id": "63721d7873e9f0047faa0655",
+      "size": 559070,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0655/download"
+    },
+    {
+      "patient": "patient011",
+      "name": "patient011_frame01_gt.nii.gz",
+      "item_id": "63721d7873e9f0047faa0659",
+      "size": 6144,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0659/download"
+    },
+    {
+      "patient": "patient011",
+      "name": "patient011_frame08.nii.gz",
+      "item_id": "63721d7873e9f0047faa065d",
+      "size": 561598,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa065d/download"
+    },
+    {
+      "patient": "patient011",
+      "name": "patient011_frame08_gt.nii.gz",
+      "item_id": "63721d7873e9f0047faa0661",
+      "size": 5958,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0661/download"
+    },
+    {
+      "patient": "patient012",
+      "name": "patient012_frame01.nii.gz",
+      "item_id": "63721d7873e9f0047faa0672",
+      "size": 533968,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0672/download"
+    },
+    {
+      "patient": "patient012",
+      "name": "patient012_frame01_gt.nii.gz",
+      "item_id": "63721d7873e9f0047faa0676",
+      "size": 6101,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa0676/download"
+    },
+    {
+      "patient": "patient012",
+      "name": "patient012_frame13.nii.gz",
+      "item_id": "63721d7873e9f0047faa067a",
+      "size": 537232,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa067a/download"
+    },
+    {
+      "patient": "patient012",
+      "name": "patient012_frame13_gt.nii.gz",
+      "item_id": "63721d7873e9f0047faa067e",
+      "size": 5515,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7873e9f0047faa067e/download"
+    },
+    {
+      "patient": "patient013",
+      "name": "patient013_frame01.nii.gz",
+      "item_id": "63721d7973e9f0047faa068f",
+      "size": 520839,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa068f/download"
+    },
+    {
+      "patient": "patient013",
+      "name": "patient013_frame01_gt.nii.gz",
+      "item_id": "63721d7973e9f0047faa0693",
+      "size": 7452,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa0693/download"
+    },
+    {
+      "patient": "patient013",
+      "name": "patient013_frame14.nii.gz",
+      "item_id": "63721d7973e9f0047faa0697",
+      "size": 523019,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa0697/download"
+    },
+    {
+      "patient": "patient013",
+      "name": "patient013_frame14_gt.nii.gz",
+      "item_id": "63721d7973e9f0047faa069b",
+      "size": 7164,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa069b/download"
+    },
+    {
+      "patient": "patient014",
+      "name": "patient014_frame01.nii.gz",
+      "item_id": "63721d7973e9f0047faa06ac",
+      "size": 629892,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06ac/download"
+    },
+    {
+      "patient": "patient014",
+      "name": "patient014_frame01_gt.nii.gz",
+      "item_id": "63721d7973e9f0047faa06b0",
+      "size": 7686,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06b0/download"
+    },
+    {
+      "patient": "patient014",
+      "name": "patient014_frame13.nii.gz",
+      "item_id": "63721d7973e9f0047faa06b4",
+      "size": 633720,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06b4/download"
+    },
+    {
+      "patient": "patient014",
+      "name": "patient014_frame13_gt.nii.gz",
+      "item_id": "63721d7973e9f0047faa06b8",
+      "size": 7440,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06b8/download"
+    },
+    {
+      "patient": "patient015",
+      "name": "patient015_frame01.nii.gz",
+      "item_id": "63721d7973e9f0047faa06c9",
+      "size": 546805,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06c9/download"
+    },
+    {
+      "patient": "patient015",
+      "name": "patient015_frame01_gt.nii.gz",
+      "item_id": "63721d7973e9f0047faa06cd",
+      "size": 6053,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06cd/download"
+    },
+    {
+      "patient": "patient015",
+      "name": "patient015_frame10.nii.gz",
+      "item_id": "63721d7973e9f0047faa06d1",
+      "size": 543792,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06d1/download"
+    },
+    {
+      "patient": "patient015",
+      "name": "patient015_frame10_gt.nii.gz",
+      "item_id": "63721d7973e9f0047faa06d5",
+      "size": 5705,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7973e9f0047faa06d5/download"
+    },
+    {
+      "patient": "patient016",
+      "name": "patient016_frame01.nii.gz",
+      "item_id": "63721d7a73e9f0047faa06e6",
+      "size": 508641,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa06e6/download"
+    },
+    {
+      "patient": "patient016",
+      "name": "patient016_frame01_gt.nii.gz",
+      "item_id": "63721d7a73e9f0047faa06ea",
+      "size": 7703,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa06ea/download"
+    },
+    {
+      "patient": "patient016",
+      "name": "patient016_frame12.nii.gz",
+      "item_id": "63721d7a73e9f0047faa06ee",
+      "size": 510060,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa06ee/download"
+    },
+    {
+      "patient": "patient016",
+      "name": "patient016_frame12_gt.nii.gz",
+      "item_id": "63721d7a73e9f0047faa06f2",
+      "size": 7033,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa06f2/download"
+    },
+    {
+      "patient": "patient017",
+      "name": "patient017_frame01.nii.gz",
+      "item_id": "63721d7a73e9f0047faa0703",
+      "size": 524148,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa0703/download"
+    },
+    {
+      "patient": "patient017",
+      "name": "patient017_frame01_gt.nii.gz",
+      "item_id": "63721d7a73e9f0047faa0707",
+      "size": 6973,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa0707/download"
+    },
+    {
+      "patient": "patient017",
+      "name": "patient017_frame09.nii.gz",
+      "item_id": "63721d7a73e9f0047faa070b",
+      "size": 527189,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa070b/download"
+    },
+    {
+      "patient": "patient017",
+      "name": "patient017_frame09_gt.nii.gz",
+      "item_id": "63721d7a73e9f0047faa070f",
+      "size": 6893,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7a73e9f0047faa070f/download"
+    },
+    {
+      "patient": "patient018",
+      "name": "patient018_frame01.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0720",
+      "size": 515296,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0720/download"
+    },
+    {
+      "patient": "patient018",
+      "name": "patient018_frame01_gt.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0724",
+      "size": 6077,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0724/download"
+    },
+    {
+      "patient": "patient018",
+      "name": "patient018_frame10.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0728",
+      "size": 517307,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0728/download"
+    },
+    {
+      "patient": "patient018",
+      "name": "patient018_frame10_gt.nii.gz",
+      "item_id": "63721d7b73e9f0047faa072c",
+      "size": 5628,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa072c/download"
+    },
+    {
+      "patient": "patient019",
+      "name": "patient019_frame01.nii.gz",
+      "item_id": "63721d7b73e9f0047faa073d",
+      "size": 715429,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa073d/download"
+    },
+    {
+      "patient": "patient019",
+      "name": "patient019_frame01_gt.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0741",
+      "size": 7625,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0741/download"
+    },
+    {
+      "patient": "patient019",
+      "name": "patient019_frame11.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0745",
+      "size": 716278,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0745/download"
+    },
+    {
+      "patient": "patient019",
+      "name": "patient019_frame11_gt.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0749",
+      "size": 7166,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0749/download"
+    },
+    {
+      "patient": "patient020",
+      "name": "patient020_frame01.nii.gz",
+      "item_id": "63721d7b73e9f0047faa075a",
+      "size": 563402,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa075a/download"
+    },
+    {
+      "patient": "patient020",
+      "name": "patient020_frame01_gt.nii.gz",
+      "item_id": "63721d7b73e9f0047faa075e",
+      "size": 4924,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa075e/download"
+    },
+    {
+      "patient": "patient020",
+      "name": "patient020_frame11.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0762",
+      "size": 565779,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0762/download"
+    },
+    {
+      "patient": "patient020",
+      "name": "patient020_frame11_gt.nii.gz",
+      "item_id": "63721d7b73e9f0047faa0766",
+      "size": 4675,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7b73e9f0047faa0766/download"
+    },
+    {
+      "patient": "patient021",
+      "name": "patient021_frame01.nii.gz",
+      "item_id": "63721d7c73e9f0047faa0777",
+      "size": 586770,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa0777/download"
+    },
+    {
+      "patient": "patient021",
+      "name": "patient021_frame01_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa077b",
+      "size": 6206,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa077b/download"
+    },
+    {
+      "patient": "patient021",
+      "name": "patient021_frame13.nii.gz",
+      "item_id": "63721d7c73e9f0047faa077f",
+      "size": 586476,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa077f/download"
+    },
+    {
+      "patient": "patient021",
+      "name": "patient021_frame13_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa0783",
+      "size": 5402,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa0783/download"
+    },
+    {
+      "patient": "patient022",
+      "name": "patient022_frame01.nii.gz",
+      "item_id": "63721d7c73e9f0047faa0794",
+      "size": 405258,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa0794/download"
+    },
+    {
+      "patient": "patient022",
+      "name": "patient022_frame01_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa0798",
+      "size": 3691,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa0798/download"
+    },
+    {
+      "patient": "patient022",
+      "name": "patient022_frame11.nii.gz",
+      "item_id": "63721d7c73e9f0047faa079c",
+      "size": 405343,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa079c/download"
+    },
+    {
+      "patient": "patient022",
+      "name": "patient022_frame11_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07a0",
+      "size": 3243,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07a0/download"
+    },
+    {
+      "patient": "patient023",
+      "name": "patient023_frame01.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07b1",
+      "size": 527827,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07b1/download"
+    },
+    {
+      "patient": "patient023",
+      "name": "patient023_frame01_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07b5",
+      "size": 5064,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07b5/download"
+    },
+    {
+      "patient": "patient023",
+      "name": "patient023_frame09.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07b9",
+      "size": 528272,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07b9/download"
+    },
+    {
+      "patient": "patient023",
+      "name": "patient023_frame09_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07bd",
+      "size": 4552,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07bd/download"
+    },
+    {
+      "patient": "patient024",
+      "name": "patient024_frame01.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07ce",
+      "size": 538180,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07ce/download"
+    },
+    {
+      "patient": "patient024",
+      "name": "patient024_frame01_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07d2",
+      "size": 4415,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07d2/download"
+    },
+    {
+      "patient": "patient024",
+      "name": "patient024_frame09.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07d6",
+      "size": 538953,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07d6/download"
+    },
+    {
+      "patient": "patient024",
+      "name": "patient024_frame09_gt.nii.gz",
+      "item_id": "63721d7c73e9f0047faa07da",
+      "size": 4022,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7c73e9f0047faa07da/download"
+    },
+    {
+      "patient": "patient025",
+      "name": "patient025_frame01.nii.gz",
+      "item_id": "63721d7d73e9f0047faa07eb",
+      "size": 597855,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa07eb/download"
+    },
+    {
+      "patient": "patient025",
+      "name": "patient025_frame01_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa07ef",
+      "size": 6957,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa07ef/download"
+    },
+    {
+      "patient": "patient025",
+      "name": "patient025_frame09.nii.gz",
+      "item_id": "63721d7d73e9f0047faa07f3",
+      "size": 598754,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa07f3/download"
+    },
+    {
+      "patient": "patient025",
+      "name": "patient025_frame09_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa07f7",
+      "size": 5498,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa07f7/download"
+    },
+    {
+      "patient": "patient026",
+      "name": "patient026_frame01.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0808",
+      "size": 519690,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0808/download"
+    },
+    {
+      "patient": "patient026",
+      "name": "patient026_frame01_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa080c",
+      "size": 7222,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa080c/download"
+    },
+    {
+      "patient": "patient026",
+      "name": "patient026_frame12.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0810",
+      "size": 518152,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0810/download"
+    },
+    {
+      "patient": "patient026",
+      "name": "patient026_frame12_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0814",
+      "size": 6169,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0814/download"
+    },
+    {
+      "patient": "patient027",
+      "name": "patient027_frame01.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0825",
+      "size": 551794,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0825/download"
+    },
+    {
+      "patient": "patient027",
+      "name": "patient027_frame01_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0829",
+      "size": 6637,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0829/download"
+    },
+    {
+      "patient": "patient027",
+      "name": "patient027_frame11.nii.gz",
+      "item_id": "63721d7d73e9f0047faa082d",
+      "size": 550314,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa082d/download"
+    },
+    {
+      "patient": "patient027",
+      "name": "patient027_frame11_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0831",
+      "size": 5537,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0831/download"
+    },
+    {
+      "patient": "patient028",
+      "name": "patient028_frame01.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0842",
+      "size": 482731,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0842/download"
+    },
+    {
+      "patient": "patient028",
+      "name": "patient028_frame01_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0846",
+      "size": 6020,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0846/download"
+    },
+    {
+      "patient": "patient028",
+      "name": "patient028_frame09.nii.gz",
+      "item_id": "63721d7d73e9f0047faa084a",
+      "size": 482527,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa084a/download"
+    },
+    {
+      "patient": "patient028",
+      "name": "patient028_frame09_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa084e",
+      "size": 5187,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa084e/download"
+    },
+    {
+      "patient": "patient029",
+      "name": "patient029_frame01.nii.gz",
+      "item_id": "63721d7d73e9f0047faa085f",
+      "size": 492621,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa085f/download"
+    },
+    {
+      "patient": "patient029",
+      "name": "patient029_frame01_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0863",
+      "size": 6823,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0863/download"
+    },
+    {
+      "patient": "patient029",
+      "name": "patient029_frame12.nii.gz",
+      "item_id": "63721d7d73e9f0047faa0867",
+      "size": 492316,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa0867/download"
+    },
+    {
+      "patient": "patient029",
+      "name": "patient029_frame12_gt.nii.gz",
+      "item_id": "63721d7d73e9f0047faa086b",
+      "size": 5220,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7d73e9f0047faa086b/download"
+    },
+    {
+      "patient": "patient030",
+      "name": "patient030_frame01.nii.gz",
+      "item_id": "63721d7e73e9f0047faa087c",
+      "size": 550995,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa087c/download"
+    },
+    {
+      "patient": "patient030",
+      "name": "patient030_frame01_gt.nii.gz",
+      "item_id": "63721d7e73e9f0047faa0880",
+      "size": 5442,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa0880/download"
+    },
+    {
+      "patient": "patient030",
+      "name": "patient030_frame12.nii.gz",
+      "item_id": "63721d7e73e9f0047faa0884",
+      "size": 551602,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa0884/download"
+    },
+    {
+      "patient": "patient030",
+      "name": "patient030_frame12_gt.nii.gz",
+      "item_id": "63721d7e73e9f0047faa0888",
+      "size": 4356,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa0888/download"
+    },
+    {
+      "patient": "patient031",
+      "name": "patient031_frame01.nii.gz",
+      "item_id": "63721d7e73e9f0047faa0899",
+      "size": 524734,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa0899/download"
+    },
+    {
+      "patient": "patient031",
+      "name": "patient031_frame01_gt.nii.gz",
+      "item_id": "63721d7e73e9f0047faa089d",
+      "size": 6333,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa089d/download"
+    },
+    {
+      "patient": "patient031",
+      "name": "patient031_frame10.nii.gz",
+      "item_id": "63721d7e73e9f0047faa08a1",
+      "size": 527767,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa08a1/download"
+    },
+    {
+      "patient": "patient031",
+      "name": "patient031_frame10_gt.nii.gz",
+      "item_id": "63721d7e73e9f0047faa08a5",
+      "size": 5047,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa08a5/download"
+    },
+    {
+      "patient": "patient032",
+      "name": "patient032_frame01.nii.gz",
+      "item_id": "63721d7e73e9f0047faa08b6",
+      "size": 609009,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa08b6/download"
+    },
+    {
+      "patient": "patient032",
+      "name": "patient032_frame01_gt.nii.gz",
+      "item_id": "63721d7e73e9f0047faa08ba",
+      "size": 6635,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa08ba/download"
+    },
+    {
+      "patient": "patient032",
+      "name": "patient032_frame12.nii.gz",
+      "item_id": "63721d7e73e9f0047faa08be",
+      "size": 608207,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7e73e9f0047faa08be/download"
+    },
+    {
+      "patient": "patient032",
+      "name": "patient032_frame12_gt.nii.gz",
+      "item_id": "63721d7f73e9f0047faa08c2",
+      "size": 5251,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7f73e9f0047faa08c2/download"
+    },
+    {
+      "patient": "patient033",
+      "name": "patient033_frame01.nii.gz",
+      "item_id": "63721d7f73e9f0047faa08d3",
+      "size": 571564,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7f73e9f0047faa08d3/download"
+    },
+    {
+      "patient": "patient033",
+      "name": "patient033_frame01_gt.nii.gz",
+      "item_id": "63721d7f73e9f0047faa08d7",
+      "size": 5509,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7f73e9f0047faa08d7/download"
+    },
+    {
+      "patient": "patient033",
+      "name": "patient033_frame14.nii.gz",
+      "item_id": "63721d7f73e9f0047faa08db",
+      "size": 571300,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7f73e9f0047faa08db/download"
+    },
+    {
+      "patient": "patient033",
+      "name": "patient033_frame14_gt.nii.gz",
+      "item_id": "63721d7f73e9f0047faa08df",
+      "size": 4541,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d7f73e9f0047faa08df/download"
+    },
+    {
+      "patient": "patient034",
+      "name": "patient034_frame01.nii.gz",
+      "item_id": "63721d8073e9f0047faa08f0",
+      "size": 657063,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8073e9f0047faa08f0/download"
+    },
+    {
+      "patient": "patient034",
+      "name": "patient034_frame01_gt.nii.gz",
+      "item_id": "63721d8073e9f0047faa08f4",
+      "size": 6274,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8073e9f0047faa08f4/download"
+    },
+    {
+      "patient": "patient034",
+      "name": "patient034_frame16.nii.gz",
+      "item_id": "63721d8073e9f0047faa08f8",
+      "size": 657188,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8073e9f0047faa08f8/download"
+    },
+    {
+      "patient": "patient034",
+      "name": "patient034_frame16_gt.nii.gz",
+      "item_id": "63721d8073e9f0047faa08fc",
+      "size": 5540,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8073e9f0047faa08fc/download"
+    },
+    {
+      "patient": "patient035",
+      "name": "patient035_frame01.nii.gz",
+      "item_id": "63721d8173e9f0047faa090d",
+      "size": 969855,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8173e9f0047faa090d/download"
+    },
+    {
+      "patient": "patient035",
+      "name": "patient035_frame01_gt.nii.gz",
+      "item_id": "63721d8173e9f0047faa0911",
+      "size": 7735,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8173e9f0047faa0911/download"
+    },
+    {
+      "patient": "patient035",
+      "name": "patient035_frame11.nii.gz",
+      "item_id": "63721d8173e9f0047faa0915",
+      "size": 969554,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8173e9f0047faa0915/download"
+    },
+    {
+      "patient": "patient035",
+      "name": "patient035_frame11_gt.nii.gz",
+      "item_id": "63721d8273e9f0047faa0919",
+      "size": 6861,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa0919/download"
+    },
+    {
+      "patient": "patient036",
+      "name": "patient036_frame01.nii.gz",
+      "item_id": "63721d8273e9f0047faa092a",
+      "size": 509772,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa092a/download"
+    },
+    {
+      "patient": "patient036",
+      "name": "patient036_frame01_gt.nii.gz",
+      "item_id": "63721d8273e9f0047faa092e",
+      "size": 5498,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa092e/download"
+    },
+    {
+      "patient": "patient036",
+      "name": "patient036_frame12.nii.gz",
+      "item_id": "63721d8273e9f0047faa0932",
+      "size": 511649,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa0932/download"
+    },
+    {
+      "patient": "patient036",
+      "name": "patient036_frame12_gt.nii.gz",
+      "item_id": "63721d8273e9f0047faa0936",
+      "size": 4530,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa0936/download"
+    },
+    {
+      "patient": "patient037",
+      "name": "patient037_frame01.nii.gz",
+      "item_id": "63721d8273e9f0047faa0947",
+      "size": 393983,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa0947/download"
+    },
+    {
+      "patient": "patient037",
+      "name": "patient037_frame01_gt.nii.gz",
+      "item_id": "63721d8273e9f0047faa094b",
+      "size": 3320,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa094b/download"
+    },
+    {
+      "patient": "patient037",
+      "name": "patient037_frame12.nii.gz",
+      "item_id": "63721d8273e9f0047faa094f",
+      "size": 395789,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa094f/download"
+    },
+    {
+      "patient": "patient037",
+      "name": "patient037_frame12_gt.nii.gz",
+      "item_id": "63721d8273e9f0047faa0953",
+      "size": 3235,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8273e9f0047faa0953/download"
+    },
+    {
+      "patient": "patient038",
+      "name": "patient038_frame01.nii.gz",
+      "item_id": "63721d8373e9f0047faa0964",
+      "size": 1096245,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa0964/download"
+    },
+    {
+      "patient": "patient038",
+      "name": "patient038_frame01_gt.nii.gz",
+      "item_id": "63721d8373e9f0047faa0968",
+      "size": 10593,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa0968/download"
+    },
+    {
+      "patient": "patient038",
+      "name": "patient038_frame11.nii.gz",
+      "item_id": "63721d8373e9f0047faa096c",
+      "size": 1093967,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa096c/download"
+    },
+    {
+      "patient": "patient038",
+      "name": "patient038_frame11_gt.nii.gz",
+      "item_id": "63721d8373e9f0047faa0970",
+      "size": 9130,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa0970/download"
+    },
+    {
+      "patient": "patient039",
+      "name": "patient039_frame01.nii.gz",
+      "item_id": "63721d8373e9f0047faa0981",
+      "size": 658534,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa0981/download"
+    },
+    {
+      "patient": "patient039",
+      "name": "patient039_frame01_gt.nii.gz",
+      "item_id": "63721d8373e9f0047faa0985",
+      "size": 5476,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa0985/download"
+    },
+    {
+      "patient": "patient039",
+      "name": "patient039_frame10.nii.gz",
+      "item_id": "63721d8373e9f0047faa0989",
+      "size": 660996,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa0989/download"
+    },
+    {
+      "patient": "patient039",
+      "name": "patient039_frame10_gt.nii.gz",
+      "item_id": "63721d8373e9f0047faa098d",
+      "size": 4562,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa098d/download"
+    },
+    {
+      "patient": "patient040",
+      "name": "patient040_frame01.nii.gz",
+      "item_id": "63721d8373e9f0047faa099e",
+      "size": 722777,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa099e/download"
+    },
+    {
+      "patient": "patient040",
+      "name": "patient040_frame01_gt.nii.gz",
+      "item_id": "63721d8373e9f0047faa09a2",
+      "size": 6431,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa09a2/download"
+    },
+    {
+      "patient": "patient040",
+      "name": "patient040_frame13.nii.gz",
+      "item_id": "63721d8373e9f0047faa09a6",
+      "size": 722684,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa09a6/download"
+    },
+    {
+      "patient": "patient040",
+      "name": "patient040_frame13_gt.nii.gz",
+      "item_id": "63721d8373e9f0047faa09aa",
+      "size": 5798,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8373e9f0047faa09aa/download"
+    },
+    {
+      "patient": "patient041",
+      "name": "patient041_frame01.nii.gz",
+      "item_id": "63721d8473e9f0047faa09bb",
+      "size": 297471,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09bb/download"
+    },
+    {
+      "patient": "patient041",
+      "name": "patient041_frame01_gt.nii.gz",
+      "item_id": "63721d8473e9f0047faa09bf",
+      "size": 2863,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09bf/download"
+    },
+    {
+      "patient": "patient041",
+      "name": "patient041_frame11.nii.gz",
+      "item_id": "63721d8473e9f0047faa09c3",
+      "size": 297132,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09c3/download"
+    },
+    {
+      "patient": "patient041",
+      "name": "patient041_frame11_gt.nii.gz",
+      "item_id": "63721d8473e9f0047faa09c7",
+      "size": 2690,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09c7/download"
+    },
+    {
+      "patient": "patient042",
+      "name": "patient042_frame01.nii.gz",
+      "item_id": "63721d8473e9f0047faa09d8",
+      "size": 560547,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09d8/download"
+    },
+    {
+      "patient": "patient042",
+      "name": "patient042_frame01_gt.nii.gz",
+      "item_id": "63721d8473e9f0047faa09dc",
+      "size": 5319,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09dc/download"
+    },
+    {
+      "patient": "patient042",
+      "name": "patient042_frame16.nii.gz",
+      "item_id": "63721d8473e9f0047faa09e0",
+      "size": 560528,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09e0/download"
+    },
+    {
+      "patient": "patient042",
+      "name": "patient042_frame16_gt.nii.gz",
+      "item_id": "63721d8473e9f0047faa09e4",
+      "size": 5064,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09e4/download"
+    },
+    {
+      "patient": "patient043",
+      "name": "patient043_frame01.nii.gz",
+      "item_id": "63721d8473e9f0047faa09f5",
+      "size": 627708,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09f5/download"
+    },
+    {
+      "patient": "patient043",
+      "name": "patient043_frame01_gt.nii.gz",
+      "item_id": "63721d8473e9f0047faa09f9",
+      "size": 5540,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09f9/download"
+    },
+    {
+      "patient": "patient043",
+      "name": "patient043_frame07.nii.gz",
+      "item_id": "63721d8473e9f0047faa09fd",
+      "size": 625278,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa09fd/download"
+    },
+    {
+      "patient": "patient043",
+      "name": "patient043_frame07_gt.nii.gz",
+      "item_id": "63721d8473e9f0047faa0a01",
+      "size": 4902,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa0a01/download"
+    },
+    {
+      "patient": "patient044",
+      "name": "patient044_frame01.nii.gz",
+      "item_id": "63721d8473e9f0047faa0a12",
+      "size": 443658,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa0a12/download"
+    },
+    {
+      "patient": "patient044",
+      "name": "patient044_frame01_gt.nii.gz",
+      "item_id": "63721d8473e9f0047faa0a16",
+      "size": 5230,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa0a16/download"
+    },
+    {
+      "patient": "patient044",
+      "name": "patient044_frame11.nii.gz",
+      "item_id": "63721d8473e9f0047faa0a1a",
+      "size": 442619,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8473e9f0047faa0a1a/download"
+    },
+    {
+      "patient": "patient044",
+      "name": "patient044_frame11_gt.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a1e",
+      "size": 4799,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a1e/download"
+    },
+    {
+      "patient": "patient045",
+      "name": "patient045_frame01.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a2f",
+      "size": 566246,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a2f/download"
+    },
+    {
+      "patient": "patient045",
+      "name": "patient045_frame01_gt.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a33",
+      "size": 5240,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a33/download"
+    },
+    {
+      "patient": "patient045",
+      "name": "patient045_frame13.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a37",
+      "size": 559868,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a37/download"
+    },
+    {
+      "patient": "patient045",
+      "name": "patient045_frame13_gt.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a3b",
+      "size": 4943,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a3b/download"
+    },
+    {
+      "patient": "patient046",
+      "name": "patient046_frame01.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a4c",
+      "size": 484002,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a4c/download"
+    },
+    {
+      "patient": "patient046",
+      "name": "patient046_frame01_gt.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a50",
+      "size": 5996,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a50/download"
+    },
+    {
+      "patient": "patient046",
+      "name": "patient046_frame10.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a54",
+      "size": 484086,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a54/download"
+    },
+    {
+      "patient": "patient046",
+      "name": "patient046_frame10_gt.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a58",
+      "size": 5367,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a58/download"
+    },
+    {
+      "patient": "patient047",
+      "name": "patient047_frame01.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a69",
+      "size": 606749,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a69/download"
+    },
+    {
+      "patient": "patient047",
+      "name": "patient047_frame01_gt.nii.gz",
+      "item_id": "63721d8573e9f0047faa0a6d",
+      "size": 5535,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8573e9f0047faa0a6d/download"
+    },
+    {
+      "patient": "patient047",
+      "name": "patient047_frame09.nii.gz",
+      "item_id": "63721d8673e9f0047faa0a71",
+      "size": 603478,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8673e9f0047faa0a71/download"
+    },
+    {
+      "patient": "patient047",
+      "name": "patient047_frame09_gt.nii.gz",
+      "item_id": "63721d8673e9f0047faa0a75",
+      "size": 5033,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8673e9f0047faa0a75/download"
+    },
+    {
+      "patient": "patient048",
+      "name": "patient048_frame01.nii.gz",
+      "item_id": "63721d8673e9f0047faa0a86",
+      "size": 560719,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8673e9f0047faa0a86/download"
+    },
+    {
+      "patient": "patient048",
+      "name": "patient048_frame01_gt.nii.gz",
+      "item_id": "63721d8673e9f0047faa0a8a",
+      "size": 4853,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8673e9f0047faa0a8a/download"
+    },
+    {
+      "patient": "patient048",
+      "name": "patient048_frame08.nii.gz",
+      "item_id": "63721d8673e9f0047faa0a8e",
+      "size": 562341,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8673e9f0047faa0a8e/download"
+    },
+    {
+      "patient": "patient048",
+      "name": "patient048_frame08_gt.nii.gz",
+      "item_id": "63721d8673e9f0047faa0a92",
+      "size": 4535,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8673e9f0047faa0a92/download"
+    },
+    {
+      "patient": "patient049",
+      "name": "patient049_frame01.nii.gz",
+      "item_id": "63721d8773e9f0047faa0aa3",
+      "size": 418033,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8773e9f0047faa0aa3/download"
+    },
+    {
+      "patient": "patient049",
+      "name": "patient049_frame01_gt.nii.gz",
+      "item_id": "63721d8773e9f0047faa0aa7",
+      "size": 4202,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8773e9f0047faa0aa7/download"
+    },
+    {
+      "patient": "patient049",
+      "name": "patient049_frame11.nii.gz",
+      "item_id": "63721d8773e9f0047faa0aab",
+      "size": 419215,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8773e9f0047faa0aab/download"
+    },
+    {
+      "patient": "patient049",
+      "name": "patient049_frame11_gt.nii.gz",
+      "item_id": "63721d8773e9f0047faa0aaf",
+      "size": 3945,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8773e9f0047faa0aaf/download"
+    },
+    {
+      "patient": "patient050",
+      "name": "patient050_frame01.nii.gz",
+      "item_id": "63721d8873e9f0047faa0ac0",
+      "size": 617184,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0ac0/download"
+    },
+    {
+      "patient": "patient050",
+      "name": "patient050_frame01_gt.nii.gz",
+      "item_id": "63721d8873e9f0047faa0ac4",
+      "size": 7023,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0ac4/download"
+    },
+    {
+      "patient": "patient050",
+      "name": "patient050_frame12.nii.gz",
+      "item_id": "63721d8873e9f0047faa0ac8",
+      "size": 616704,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0ac8/download"
+    },
+    {
+      "patient": "patient050",
+      "name": "patient050_frame12_gt.nii.gz",
+      "item_id": "63721d8873e9f0047faa0acc",
+      "size": 6685,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0acc/download"
+    },
+    {
+      "patient": "patient051",
+      "name": "patient051_frame01.nii.gz",
+      "item_id": "63721d8873e9f0047faa0add",
+      "size": 640156,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0add/download"
+    },
+    {
+      "patient": "patient051",
+      "name": "patient051_frame01_gt.nii.gz",
+      "item_id": "63721d8873e9f0047faa0ae1",
+      "size": 6140,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0ae1/download"
+    },
+    {
+      "patient": "patient051",
+      "name": "patient051_frame11.nii.gz",
+      "item_id": "63721d8873e9f0047faa0ae5",
+      "size": 642039,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0ae5/download"
+    },
+    {
+      "patient": "patient051",
+      "name": "patient051_frame11_gt.nii.gz",
+      "item_id": "63721d8873e9f0047faa0ae9",
+      "size": 5278,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0ae9/download"
+    },
+    {
+      "patient": "patient052",
+      "name": "patient052_frame01.nii.gz",
+      "item_id": "63721d8873e9f0047faa0afa",
+      "size": 551295,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0afa/download"
+    },
+    {
+      "patient": "patient052",
+      "name": "patient052_frame01_gt.nii.gz",
+      "item_id": "63721d8873e9f0047faa0afe",
+      "size": 5478,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0afe/download"
+    },
+    {
+      "patient": "patient052",
+      "name": "patient052_frame09.nii.gz",
+      "item_id": "63721d8873e9f0047faa0b02",
+      "size": 552763,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8873e9f0047faa0b02/download"
+    },
+    {
+      "patient": "patient052",
+      "name": "patient052_frame09_gt.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b06",
+      "size": 4967,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b06/download"
+    },
+    {
+      "patient": "patient053",
+      "name": "patient053_frame01.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b17",
+      "size": 488584,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b17/download"
+    },
+    {
+      "patient": "patient053",
+      "name": "patient053_frame01_gt.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b1b",
+      "size": 4989,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b1b/download"
+    },
+    {
+      "patient": "patient053",
+      "name": "patient053_frame12.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b1f",
+      "size": 489851,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b1f/download"
+    },
+    {
+      "patient": "patient053",
+      "name": "patient053_frame12_gt.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b23",
+      "size": 4740,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b23/download"
+    },
+    {
+      "patient": "patient054",
+      "name": "patient054_frame01.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b34",
+      "size": 478995,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b34/download"
+    },
+    {
+      "patient": "patient054",
+      "name": "patient054_frame01_gt.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b38",
+      "size": 5210,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b38/download"
+    },
+    {
+      "patient": "patient054",
+      "name": "patient054_frame12.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b3c",
+      "size": 481741,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b3c/download"
+    },
+    {
+      "patient": "patient054",
+      "name": "patient054_frame12_gt.nii.gz",
+      "item_id": "63721d8973e9f0047faa0b40",
+      "size": 4670,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8973e9f0047faa0b40/download"
+    },
+    {
+      "patient": "patient055",
+      "name": "patient055_frame01.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b51",
+      "size": 560646,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b51/download"
+    },
+    {
+      "patient": "patient055",
+      "name": "patient055_frame01_gt.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b55",
+      "size": 5839,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b55/download"
+    },
+    {
+      "patient": "patient055",
+      "name": "patient055_frame10.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b59",
+      "size": 560769,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b59/download"
+    },
+    {
+      "patient": "patient055",
+      "name": "patient055_frame10_gt.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b5d",
+      "size": 5543,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b5d/download"
+    },
+    {
+      "patient": "patient056",
+      "name": "patient056_frame01.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b6e",
+      "size": 524494,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b6e/download"
+    },
+    {
+      "patient": "patient056",
+      "name": "patient056_frame01_gt.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b72",
+      "size": 6382,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b72/download"
+    },
+    {
+      "patient": "patient056",
+      "name": "patient056_frame12.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b76",
+      "size": 525248,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b76/download"
+    },
+    {
+      "patient": "patient056",
+      "name": "patient056_frame12_gt.nii.gz",
+      "item_id": "63721d8a73e9f0047faa0b7a",
+      "size": 5373,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8a73e9f0047faa0b7a/download"
+    },
+    {
+      "patient": "patient057",
+      "name": "patient057_frame01.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0b8b",
+      "size": 1832178,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0b8b/download"
+    },
+    {
+      "patient": "patient057",
+      "name": "patient057_frame01_gt.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0b8f",
+      "size": 16271,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0b8f/download"
+    },
+    {
+      "patient": "patient057",
+      "name": "patient057_frame09.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0b93",
+      "size": 1837024,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0b93/download"
+    },
+    {
+      "patient": "patient057",
+      "name": "patient057_frame09_gt.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0b97",
+      "size": 14866,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0b97/download"
+    },
+    {
+      "patient": "patient058",
+      "name": "patient058_frame01.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0ba8",
+      "size": 568514,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0ba8/download"
+    },
+    {
+      "patient": "patient058",
+      "name": "patient058_frame01_gt.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0bac",
+      "size": 5861,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0bac/download"
+    },
+    {
+      "patient": "patient058",
+      "name": "patient058_frame14.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0bb0",
+      "size": 569076,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0bb0/download"
+    },
+    {
+      "patient": "patient058",
+      "name": "patient058_frame14_gt.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0bb4",
+      "size": 5186,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0bb4/download"
+    },
+    {
+      "patient": "patient059",
+      "name": "patient059_frame01.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0bc5",
+      "size": 526292,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0bc5/download"
+    },
+    {
+      "patient": "patient059",
+      "name": "patient059_frame01_gt.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0bc9",
+      "size": 6226,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0bc9/download"
+    },
+    {
+      "patient": "patient059",
+      "name": "patient059_frame09.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0bcd",
+      "size": 527589,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0bcd/download"
+    },
+    {
+      "patient": "patient059",
+      "name": "patient059_frame09_gt.nii.gz",
+      "item_id": "63721d8b73e9f0047faa0bd1",
+      "size": 5361,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8b73e9f0047faa0bd1/download"
+    },
+    {
+      "patient": "patient060",
+      "name": "patient060_frame01.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0be2",
+      "size": 563900,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0be2/download"
+    },
+    {
+      "patient": "patient060",
+      "name": "patient060_frame01_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0be6",
+      "size": 5413,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0be6/download"
+    },
+    {
+      "patient": "patient060",
+      "name": "patient060_frame14.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0bea",
+      "size": 565073,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0bea/download"
+    },
+    {
+      "patient": "patient060",
+      "name": "patient060_frame14_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0bee",
+      "size": 4759,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0bee/download"
+    },
+    {
+      "patient": "patient061",
+      "name": "patient061_frame01.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0bff",
+      "size": 503824,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0bff/download"
+    },
+    {
+      "patient": "patient061",
+      "name": "patient061_frame01_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c03",
+      "size": 5877,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c03/download"
+    },
+    {
+      "patient": "patient061",
+      "name": "patient061_frame10.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c07",
+      "size": 504757,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c07/download"
+    },
+    {
+      "patient": "patient061",
+      "name": "patient061_frame10_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c0b",
+      "size": 4596,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c0b/download"
+    },
+    {
+      "patient": "patient062",
+      "name": "patient062_frame01.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c1c",
+      "size": 466706,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c1c/download"
+    },
+    {
+      "patient": "patient062",
+      "name": "patient062_frame01_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c20",
+      "size": 6844,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c20/download"
+    },
+    {
+      "patient": "patient062",
+      "name": "patient062_frame09.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c24",
+      "size": 469888,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c24/download"
+    },
+    {
+      "patient": "patient062",
+      "name": "patient062_frame09_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c28",
+      "size": 5981,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c28/download"
+    },
+    {
+      "patient": "patient063",
+      "name": "patient063_frame01.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c39",
+      "size": 470176,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c39/download"
+    },
+    {
+      "patient": "patient063",
+      "name": "patient063_frame01_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c3d",
+      "size": 4119,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c3d/download"
+    },
+    {
+      "patient": "patient063",
+      "name": "patient063_frame16.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c41",
+      "size": 473119,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c41/download"
+    },
+    {
+      "patient": "patient063",
+      "name": "patient063_frame16_gt.nii.gz",
+      "item_id": "63721d8c73e9f0047faa0c45",
+      "size": 3251,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8c73e9f0047faa0c45/download"
+    },
+    {
+      "patient": "patient064",
+      "name": "patient064_frame01.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c56",
+      "size": 551345,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c56/download"
+    },
+    {
+      "patient": "patient064",
+      "name": "patient064_frame01_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c5a",
+      "size": 5924,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c5a/download"
+    },
+    {
+      "patient": "patient064",
+      "name": "patient064_frame12.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c5e",
+      "size": 552564,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c5e/download"
+    },
+    {
+      "patient": "patient064",
+      "name": "patient064_frame12_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c62",
+      "size": 5467,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c62/download"
+    },
+    {
+      "patient": "patient065",
+      "name": "patient065_frame01.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c73",
+      "size": 374592,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c73/download"
+    },
+    {
+      "patient": "patient065",
+      "name": "patient065_frame01_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c77",
+      "size": 4018,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c77/download"
+    },
+    {
+      "patient": "patient065",
+      "name": "patient065_frame14.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c7b",
+      "size": 376110,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c7b/download"
+    },
+    {
+      "patient": "patient065",
+      "name": "patient065_frame14_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c7f",
+      "size": 3356,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c7f/download"
+    },
+    {
+      "patient": "patient066",
+      "name": "patient066_frame01.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c90",
+      "size": 577320,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c90/download"
+    },
+    {
+      "patient": "patient066",
+      "name": "patient066_frame01_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c94",
+      "size": 6196,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c94/download"
+    },
+    {
+      "patient": "patient066",
+      "name": "patient066_frame11.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c98",
+      "size": 578302,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c98/download"
+    },
+    {
+      "patient": "patient066",
+      "name": "patient066_frame11_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0c9c",
+      "size": 5144,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0c9c/download"
+    },
+    {
+      "patient": "patient067",
+      "name": "patient067_frame01.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0cad",
+      "size": 458680,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0cad/download"
+    },
+    {
+      "patient": "patient067",
+      "name": "patient067_frame01_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0cb1",
+      "size": 6657,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0cb1/download"
+    },
+    {
+      "patient": "patient067",
+      "name": "patient067_frame10.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0cb5",
+      "size": 468762,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0cb5/download"
+    },
+    {
+      "patient": "patient067",
+      "name": "patient067_frame10_gt.nii.gz",
+      "item_id": "63721d8d73e9f0047faa0cb9",
+      "size": 5407,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8d73e9f0047faa0cb9/download"
+    },
+    {
+      "patient": "patient068",
+      "name": "patient068_frame01.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0cca",
+      "size": 404866,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0cca/download"
+    },
+    {
+      "patient": "patient068",
+      "name": "patient068_frame01_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0cce",
+      "size": 4050,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0cce/download"
+    },
+    {
+      "patient": "patient068",
+      "name": "patient068_frame12.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0cd2",
+      "size": 404431,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0cd2/download"
+    },
+    {
+      "patient": "patient068",
+      "name": "patient068_frame12_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0cd6",
+      "size": 3546,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0cd6/download"
+    },
+    {
+      "patient": "patient069",
+      "name": "patient069_frame01.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0ce7",
+      "size": 387987,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0ce7/download"
+    },
+    {
+      "patient": "patient069",
+      "name": "patient069_frame01_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0ceb",
+      "size": 3649,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0ceb/download"
+    },
+    {
+      "patient": "patient069",
+      "name": "patient069_frame12.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0cef",
+      "size": 387652,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0cef/download"
+    },
+    {
+      "patient": "patient069",
+      "name": "patient069_frame12_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0cf3",
+      "size": 3329,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0cf3/download"
+    },
+    {
+      "patient": "patient070",
+      "name": "patient070_frame01.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d04",
+      "size": 447923,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d04/download"
+    },
+    {
+      "patient": "patient070",
+      "name": "patient070_frame01_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d08",
+      "size": 3672,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d08/download"
+    },
+    {
+      "patient": "patient070",
+      "name": "patient070_frame10.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d0c",
+      "size": 448345,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d0c/download"
+    },
+    {
+      "patient": "patient070",
+      "name": "patient070_frame10_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d10",
+      "size": 3030,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d10/download"
+    },
+    {
+      "patient": "patient071",
+      "name": "patient071_frame01.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d21",
+      "size": 421002,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d21/download"
+    },
+    {
+      "patient": "patient071",
+      "name": "patient071_frame01_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d25",
+      "size": 5643,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d25/download"
+    },
+    {
+      "patient": "patient071",
+      "name": "patient071_frame09.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d29",
+      "size": 424213,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d29/download"
+    },
+    {
+      "patient": "patient071",
+      "name": "patient071_frame09_gt.nii.gz",
+      "item_id": "63721d8e73e9f0047faa0d2d",
+      "size": 4511,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8e73e9f0047faa0d2d/download"
+    },
+    {
+      "patient": "patient072",
+      "name": "patient072_frame01.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d3e",
+      "size": 454823,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d3e/download"
+    },
+    {
+      "patient": "patient072",
+      "name": "patient072_frame01_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d42",
+      "size": 4694,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d42/download"
+    },
+    {
+      "patient": "patient072",
+      "name": "patient072_frame11.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d46",
+      "size": 455265,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d46/download"
+    },
+    {
+      "patient": "patient072",
+      "name": "patient072_frame11_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d4a",
+      "size": 3993,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d4a/download"
+    },
+    {
+      "patient": "patient073",
+      "name": "patient073_frame01.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d5b",
+      "size": 490241,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d5b/download"
+    },
+    {
+      "patient": "patient073",
+      "name": "patient073_frame01_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d5f",
+      "size": 4109,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d5f/download"
+    },
+    {
+      "patient": "patient073",
+      "name": "patient073_frame10.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d63",
+      "size": 491879,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d63/download"
+    },
+    {
+      "patient": "patient073",
+      "name": "patient073_frame10_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d67",
+      "size": 3682,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d67/download"
+    },
+    {
+      "patient": "patient074",
+      "name": "patient074_frame01.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d78",
+      "size": 582887,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d78/download"
+    },
+    {
+      "patient": "patient074",
+      "name": "patient074_frame01_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d7c",
+      "size": 5399,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d7c/download"
+    },
+    {
+      "patient": "patient074",
+      "name": "patient074_frame12.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d80",
+      "size": 586501,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d80/download"
+    },
+    {
+      "patient": "patient074",
+      "name": "patient074_frame12_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d84",
+      "size": 4548,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d84/download"
+    },
+    {
+      "patient": "patient075",
+      "name": "patient075_frame01.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d95",
+      "size": 757901,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d95/download"
+    },
+    {
+      "patient": "patient075",
+      "name": "patient075_frame01_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d99",
+      "size": 6938,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d99/download"
+    },
+    {
+      "patient": "patient075",
+      "name": "patient075_frame06.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0d9d",
+      "size": 755320,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0d9d/download"
+    },
+    {
+      "patient": "patient075",
+      "name": "patient075_frame06_gt.nii.gz",
+      "item_id": "63721d8f73e9f0047faa0da1",
+      "size": 6106,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d8f73e9f0047faa0da1/download"
+    },
+    {
+      "patient": "patient076",
+      "name": "patient076_frame01.nii.gz",
+      "item_id": "63721d9073e9f0047faa0db2",
+      "size": 582887,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0db2/download"
+    },
+    {
+      "patient": "patient076",
+      "name": "patient076_frame01_gt.nii.gz",
+      "item_id": "63721d9073e9f0047faa0db6",
+      "size": 5471,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0db6/download"
+    },
+    {
+      "patient": "patient076",
+      "name": "patient076_frame12.nii.gz",
+      "item_id": "63721d9073e9f0047faa0dba",
+      "size": 586501,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0dba/download"
+    },
+    {
+      "patient": "patient076",
+      "name": "patient076_frame12_gt.nii.gz",
+      "item_id": "63721d9073e9f0047faa0dbe",
+      "size": 4648,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0dbe/download"
+    },
+    {
+      "patient": "patient077",
+      "name": "patient077_frame01.nii.gz",
+      "item_id": "63721d9073e9f0047faa0dcf",
+      "size": 487552,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0dcf/download"
+    },
+    {
+      "patient": "patient077",
+      "name": "patient077_frame01_gt.nii.gz",
+      "item_id": "63721d9073e9f0047faa0dd3",
+      "size": 5409,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0dd3/download"
+    },
+    {
+      "patient": "patient077",
+      "name": "patient077_frame09.nii.gz",
+      "item_id": "63721d9073e9f0047faa0dd7",
+      "size": 490238,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0dd7/download"
+    },
+    {
+      "patient": "patient077",
+      "name": "patient077_frame09_gt.nii.gz",
+      "item_id": "63721d9073e9f0047faa0ddb",
+      "size": 4366,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0ddb/download"
+    },
+    {
+      "patient": "patient078",
+      "name": "patient078_frame01.nii.gz",
+      "item_id": "63721d9073e9f0047faa0dec",
+      "size": 526595,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0dec/download"
+    },
+    {
+      "patient": "patient078",
+      "name": "patient078_frame01_gt.nii.gz",
+      "item_id": "63721d9073e9f0047faa0df0",
+      "size": 6144,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0df0/download"
+    },
+    {
+      "patient": "patient078",
+      "name": "patient078_frame09.nii.gz",
+      "item_id": "63721d9073e9f0047faa0df4",
+      "size": 532577,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0df4/download"
+    },
+    {
+      "patient": "patient078",
+      "name": "patient078_frame09_gt.nii.gz",
+      "item_id": "63721d9073e9f0047faa0df8",
+      "size": 5130,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9073e9f0047faa0df8/download"
+    },
+    {
+      "patient": "patient079",
+      "name": "patient079_frame01.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e09",
+      "size": 580103,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e09/download"
+    },
+    {
+      "patient": "patient079",
+      "name": "patient079_frame01_gt.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e0d",
+      "size": 5764,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e0d/download"
+    },
+    {
+      "patient": "patient079",
+      "name": "patient079_frame11.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e11",
+      "size": 581523,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e11/download"
+    },
+    {
+      "patient": "patient079",
+      "name": "patient079_frame11_gt.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e15",
+      "size": 4984,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e15/download"
+    },
+    {
+      "patient": "patient080",
+      "name": "patient080_frame01.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e26",
+      "size": 349558,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e26/download"
+    },
+    {
+      "patient": "patient080",
+      "name": "patient080_frame01_gt.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e2a",
+      "size": 3621,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e2a/download"
+    },
+    {
+      "patient": "patient080",
+      "name": "patient080_frame10.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e2e",
+      "size": 348987,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e2e/download"
+    },
+    {
+      "patient": "patient080",
+      "name": "patient080_frame10_gt.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e32",
+      "size": 3140,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e32/download"
+    },
+    {
+      "patient": "patient081",
+      "name": "patient081_frame01.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e43",
+      "size": 809736,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e43/download"
+    },
+    {
+      "patient": "patient081",
+      "name": "patient081_frame01_gt.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e47",
+      "size": 8918,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e47/download"
+    },
+    {
+      "patient": "patient081",
+      "name": "patient081_frame07.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e4b",
+      "size": 806384,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e4b/download"
+    },
+    {
+      "patient": "patient081",
+      "name": "patient081_frame07_gt.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e4f",
+      "size": 7288,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e4f/download"
+    },
+    {
+      "patient": "patient082",
+      "name": "patient082_frame01.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e60",
+      "size": 765541,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e60/download"
+    },
+    {
+      "patient": "patient082",
+      "name": "patient082_frame01_gt.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e64",
+      "size": 8223,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e64/download"
+    },
+    {
+      "patient": "patient082",
+      "name": "patient082_frame07.nii.gz",
+      "item_id": "63721d9173e9f0047faa0e68",
+      "size": 763343,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9173e9f0047faa0e68/download"
+    },
+    {
+      "patient": "patient082",
+      "name": "patient082_frame07_gt.nii.gz",
+      "item_id": "63721d9273e9f0047faa0e6c",
+      "size": 7011,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9273e9f0047faa0e6c/download"
+    },
+    {
+      "patient": "patient083",
+      "name": "patient083_frame01.nii.gz",
+      "item_id": "63721d9273e9f0047faa0e7d",
+      "size": 415277,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9273e9f0047faa0e7d/download"
+    },
+    {
+      "patient": "patient083",
+      "name": "patient083_frame01_gt.nii.gz",
+      "item_id": "63721d9273e9f0047faa0e81",
+      "size": 3613,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9273e9f0047faa0e81/download"
+    },
+    {
+      "patient": "patient083",
+      "name": "patient083_frame08.nii.gz",
+      "item_id": "63721d9273e9f0047faa0e85",
+      "size": 413284,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9273e9f0047faa0e85/download"
+    },
+    {
+      "patient": "patient083",
+      "name": "patient083_frame08_gt.nii.gz",
+      "item_id": "63721d9273e9f0047faa0e89",
+      "size": 3421,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9273e9f0047faa0e89/download"
+    },
+    {
+      "patient": "patient084",
+      "name": "patient084_frame01.nii.gz",
+      "item_id": "63721d9273e9f0047faa0e9a",
+      "size": 718408,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9273e9f0047faa0e9a/download"
+    },
+    {
+      "patient": "patient084",
+      "name": "patient084_frame01_gt.nii.gz",
+      "item_id": "63721d9373e9f0047faa0e9e",
+      "size": 7659,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9373e9f0047faa0e9e/download"
+    },
+    {
+      "patient": "patient084",
+      "name": "patient084_frame10.nii.gz",
+      "item_id": "63721d9373e9f0047faa0ea2",
+      "size": 721720,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9373e9f0047faa0ea2/download"
+    },
+    {
+      "patient": "patient084",
+      "name": "patient084_frame10_gt.nii.gz",
+      "item_id": "63721d9373e9f0047faa0ea6",
+      "size": 6396,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9373e9f0047faa0ea6/download"
+    },
+    {
+      "patient": "patient085",
+      "name": "patient085_frame01.nii.gz",
+      "item_id": "63721d9473e9f0047faa0eb7",
+      "size": 945837,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9473e9f0047faa0eb7/download"
+    },
+    {
+      "patient": "patient085",
+      "name": "patient085_frame01_gt.nii.gz",
+      "item_id": "63721d9473e9f0047faa0ebb",
+      "size": 10309,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9473e9f0047faa0ebb/download"
+    },
+    {
+      "patient": "patient085",
+      "name": "patient085_frame09.nii.gz",
+      "item_id": "63721d9473e9f0047faa0ebf",
+      "size": 958918,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9473e9f0047faa0ebf/download"
+    },
+    {
+      "patient": "patient085",
+      "name": "patient085_frame09_gt.nii.gz",
+      "item_id": "63721d9473e9f0047faa0ec3",
+      "size": 9336,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9473e9f0047faa0ec3/download"
+    },
+    {
+      "patient": "patient086",
+      "name": "patient086_frame01.nii.gz",
+      "item_id": "63721d9573e9f0047faa0ed4",
+      "size": 486808,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9573e9f0047faa0ed4/download"
+    },
+    {
+      "patient": "patient086",
+      "name": "patient086_frame01_gt.nii.gz",
+      "item_id": "63721d9573e9f0047faa0ed8",
+      "size": 4418,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9573e9f0047faa0ed8/download"
+    },
+    {
+      "patient": "patient086",
+      "name": "patient086_frame08.nii.gz",
+      "item_id": "63721d9573e9f0047faa0edc",
+      "size": 486011,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9573e9f0047faa0edc/download"
+    },
+    {
+      "patient": "patient086",
+      "name": "patient086_frame08_gt.nii.gz",
+      "item_id": "63721d9573e9f0047faa0ee0",
+      "size": 4298,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9573e9f0047faa0ee0/download"
+    },
+    {
+      "patient": "patient087",
+      "name": "patient087_frame01.nii.gz",
+      "item_id": "63721d9673e9f0047faa0ef1",
+      "size": 498635,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9673e9f0047faa0ef1/download"
+    },
+    {
+      "patient": "patient087",
+      "name": "patient087_frame01_gt.nii.gz",
+      "item_id": "63721d9673e9f0047faa0ef5",
+      "size": 5513,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9673e9f0047faa0ef5/download"
+    },
+    {
+      "patient": "patient087",
+      "name": "patient087_frame10.nii.gz",
+      "item_id": "63721d9673e9f0047faa0ef9",
+      "size": 499553,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9673e9f0047faa0ef9/download"
+    },
+    {
+      "patient": "patient087",
+      "name": "patient087_frame10_gt.nii.gz",
+      "item_id": "63721d9673e9f0047faa0efd",
+      "size": 4861,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9673e9f0047faa0efd/download"
+    },
+    {
+      "patient": "patient088",
+      "name": "patient088_frame01.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f0e",
+      "size": 755184,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f0e/download"
+    },
+    {
+      "patient": "patient088",
+      "name": "patient088_frame01_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f12",
+      "size": 8200,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f12/download"
+    },
+    {
+      "patient": "patient088",
+      "name": "patient088_frame12.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f16",
+      "size": 751227,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f16/download"
+    },
+    {
+      "patient": "patient088",
+      "name": "patient088_frame12_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f1a",
+      "size": 6647,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f1a/download"
+    },
+    {
+      "patient": "patient089",
+      "name": "patient089_frame01.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f2b",
+      "size": 530092,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f2b/download"
+    },
+    {
+      "patient": "patient089",
+      "name": "patient089_frame01_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f2f",
+      "size": 4157,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f2f/download"
+    },
+    {
+      "patient": "patient089",
+      "name": "patient089_frame10.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f33",
+      "size": 529557,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f33/download"
+    },
+    {
+      "patient": "patient089",
+      "name": "patient089_frame10_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f37",
+      "size": 3936,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f37/download"
+    },
+    {
+      "patient": "patient090",
+      "name": "patient090_frame04.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f48",
+      "size": 203002,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f48/download"
+    },
+    {
+      "patient": "patient090",
+      "name": "patient090_frame04_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f4c",
+      "size": 3318,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f4c/download"
+    },
+    {
+      "patient": "patient090",
+      "name": "patient090_frame11.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f50",
+      "size": 203753,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f50/download"
+    },
+    {
+      "patient": "patient090",
+      "name": "patient090_frame11_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f54",
+      "size": 2824,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f54/download"
+    },
+    {
+      "patient": "patient091",
+      "name": "patient091_frame01.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f65",
+      "size": 311629,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f65/download"
+    },
+    {
+      "patient": "patient091",
+      "name": "patient091_frame01_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f69",
+      "size": 4360,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f69/download"
+    },
+    {
+      "patient": "patient091",
+      "name": "patient091_frame09.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f6d",
+      "size": 319642,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f6d/download"
+    },
+    {
+      "patient": "patient091",
+      "name": "patient091_frame09_gt.nii.gz",
+      "item_id": "63721d9773e9f0047faa0f71",
+      "size": 3599,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9773e9f0047faa0f71/download"
+    },
+    {
+      "patient": "patient092",
+      "name": "patient092_frame01.nii.gz",
+      "item_id": "63721d9873e9f0047faa0f82",
+      "size": 648707,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0f82/download"
+    },
+    {
+      "patient": "patient092",
+      "name": "patient092_frame01_gt.nii.gz",
+      "item_id": "63721d9873e9f0047faa0f86",
+      "size": 7703,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0f86/download"
+    },
+    {
+      "patient": "patient092",
+      "name": "patient092_frame06.nii.gz",
+      "item_id": "63721d9873e9f0047faa0f8a",
+      "size": 648736,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0f8a/download"
+    },
+    {
+      "patient": "patient092",
+      "name": "patient092_frame06_gt.nii.gz",
+      "item_id": "63721d9873e9f0047faa0f8e",
+      "size": 6455,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0f8e/download"
+    },
+    {
+      "patient": "patient093",
+      "name": "patient093_frame01.nii.gz",
+      "item_id": "63721d9873e9f0047faa0f9f",
+      "size": 418884,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0f9f/download"
+    },
+    {
+      "patient": "patient093",
+      "name": "patient093_frame01_gt.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fa3",
+      "size": 5398,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fa3/download"
+    },
+    {
+      "patient": "patient093",
+      "name": "patient093_frame14.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fa7",
+      "size": 423604,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fa7/download"
+    },
+    {
+      "patient": "patient093",
+      "name": "patient093_frame14_gt.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fab",
+      "size": 4368,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fab/download"
+    },
+    {
+      "patient": "patient094",
+      "name": "patient094_frame01.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fbc",
+      "size": 310054,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fbc/download"
+    },
+    {
+      "patient": "patient094",
+      "name": "patient094_frame01_gt.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fc0",
+      "size": 4465,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fc0/download"
+    },
+    {
+      "patient": "patient094",
+      "name": "patient094_frame07.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fc4",
+      "size": 313485,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fc4/download"
+    },
+    {
+      "patient": "patient094",
+      "name": "patient094_frame07_gt.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fc8",
+      "size": 3896,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fc8/download"
+    },
+    {
+      "patient": "patient095",
+      "name": "patient095_frame01.nii.gz",
+      "item_id": "63721d9873e9f0047faa0fd9",
+      "size": 690994,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9873e9f0047faa0fd9/download"
+    },
+    {
+      "patient": "patient095",
+      "name": "patient095_frame01_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa0fdd",
+      "size": 7904,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa0fdd/download"
+    },
+    {
+      "patient": "patient095",
+      "name": "patient095_frame12.nii.gz",
+      "item_id": "63721d9973e9f0047faa0fe1",
+      "size": 698972,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa0fe1/download"
+    },
+    {
+      "patient": "patient095",
+      "name": "patient095_frame12_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa0fe5",
+      "size": 6878,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa0fe5/download"
+    },
+    {
+      "patient": "patient096",
+      "name": "patient096_frame01.nii.gz",
+      "item_id": "63721d9973e9f0047faa0ff6",
+      "size": 702093,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa0ff6/download"
+    },
+    {
+      "patient": "patient096",
+      "name": "patient096_frame01_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa0ffa",
+      "size": 10226,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa0ffa/download"
+    },
+    {
+      "patient": "patient096",
+      "name": "patient096_frame08.nii.gz",
+      "item_id": "63721d9973e9f0047faa0ffe",
+      "size": 703777,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa0ffe/download"
+    },
+    {
+      "patient": "patient096",
+      "name": "patient096_frame08_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa1002",
+      "size": 8700,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa1002/download"
+    },
+    {
+      "patient": "patient097",
+      "name": "patient097_frame01.nii.gz",
+      "item_id": "63721d9973e9f0047faa1013",
+      "size": 495001,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa1013/download"
+    },
+    {
+      "patient": "patient097",
+      "name": "patient097_frame01_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa1017",
+      "size": 5644,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa1017/download"
+    },
+    {
+      "patient": "patient097",
+      "name": "patient097_frame11.nii.gz",
+      "item_id": "63721d9973e9f0047faa101b",
+      "size": 497924,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa101b/download"
+    },
+    {
+      "patient": "patient097",
+      "name": "patient097_frame11_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa101f",
+      "size": 4713,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa101f/download"
+    },
+    {
+      "patient": "patient098",
+      "name": "patient098_frame01.nii.gz",
+      "item_id": "63721d9973e9f0047faa1030",
+      "size": 413347,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa1030/download"
+    },
+    {
+      "patient": "patient098",
+      "name": "patient098_frame01_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa1034",
+      "size": 5419,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa1034/download"
+    },
+    {
+      "patient": "patient098",
+      "name": "patient098_frame09.nii.gz",
+      "item_id": "63721d9973e9f0047faa1038",
+      "size": 413756,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa1038/download"
+    },
+    {
+      "patient": "patient098",
+      "name": "patient098_frame09_gt.nii.gz",
+      "item_id": "63721d9973e9f0047faa103c",
+      "size": 5235,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9973e9f0047faa103c/download"
+    },
+    {
+      "patient": "patient099",
+      "name": "patient099_frame01.nii.gz",
+      "item_id": "63721d9a73e9f0047faa104d",
+      "size": 772913,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa104d/download"
+    },
+    {
+      "patient": "patient099",
+      "name": "patient099_frame01_gt.nii.gz",
+      "item_id": "63721d9a73e9f0047faa1051",
+      "size": 7961,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa1051/download"
+    },
+    {
+      "patient": "patient099",
+      "name": "patient099_frame09.nii.gz",
+      "item_id": "63721d9a73e9f0047faa1055",
+      "size": 773194,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa1055/download"
+    },
+    {
+      "patient": "patient099",
+      "name": "patient099_frame09_gt.nii.gz",
+      "item_id": "63721d9a73e9f0047faa1059",
+      "size": 6798,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa1059/download"
+    },
+    {
+      "patient": "patient100",
+      "name": "patient100_frame01.nii.gz",
+      "item_id": "63721d9a73e9f0047faa106a",
+      "size": 707509,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa106a/download"
+    },
+    {
+      "patient": "patient100",
+      "name": "patient100_frame01_gt.nii.gz",
+      "item_id": "63721d9a73e9f0047faa106e",
+      "size": 5656,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa106e/download"
+    },
+    {
+      "patient": "patient100",
+      "name": "patient100_frame13.nii.gz",
+      "item_id": "63721d9a73e9f0047faa1072",
+      "size": 711320,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa1072/download"
+    },
+    {
+      "patient": "patient100",
+      "name": "patient100_frame13_gt.nii.gz",
+      "item_id": "63721d9a73e9f0047faa1076",
+      "size": 4794,
+      "url": "https://humanheart-project.creatis.insa-lyon.fr/database/api/v1/item/63721d9a73e9f0047faa1076/download"
+    }
+  ]
+}
