@@ -3,6 +3,7 @@
 No 4D images, test patients, archives or second copy of the original images.
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import gzip
 import json
 from pathlib import Path
@@ -83,14 +84,17 @@ def download(c):
     else:
         manifest = {'inventory_sha256': inventory_sha, 'files': {}}
         write_json(path, manifest)
-    for index, entry in enumerate(inventory['files'], 1):
+    workers = c.get('download_workers', 10)  # Existing server configs also default to ten.
+    if type(workers) is not int or not 1 <= workers <= 10:
+        raise ValueError('download_workers must be an integer from 1 to 10')
+
+    def fetch(entry, expected):
         name = entry['name']
         target = raw_target(c, name)
-        expected = manifest['files'].get(name)
         if target.exists() and expected and digest(target) == expected:
-            continue
+            return name, expected, True
         if target.exists() and not expected:
-            # Recover a download completed just before a crash, without a second copy.
+            # Recover a completed file not yet recorded when a previous run stopped.
             if target.stat().st_size != entry['size']:
                 raise ValueError(f'Untracked file has unexpected size: {target}')
             with gzip.open(target, 'rb') as stream:
@@ -101,9 +105,31 @@ def download(c):
         actual = digest(target)
         if expected and actual != expected:
             raise ValueError(f'File content changed since the first download: {name}')
-        manifest['files'][name] = actual
-        write_json(path, manifest)
-        print(f'[{index}/400] {name}', flush=True)
+        return name, actual, False
+
+    total = len(inventory['files'])
+    errors = []
+    print(f'Download concurrency: {workers}; checking {total} files', flush=True)
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(fetch, entry, manifest['files'].get(entry['name'])): entry['name']
+                   for entry in inventory['files']}
+        for index, future in enumerate(as_completed(futures), 1):
+            try:
+                name, actual, reused = future.result()
+            except Exception as error:
+                name = futures[future]
+                errors.append((name, error))
+                print(f'[{index}/{total}] FAILED {name}: {error}', flush=True)
+                continue
+            if manifest['files'].get(name) != actual:
+                manifest['files'][name] = actual
+                # Only the main thread writes; sorting makes the file independent of completion order.
+                manifest['files'] = dict(sorted(manifest['files'].items()))
+                write_json(path, manifest)
+            print(f'[{index}/{total}] {"REUSED" if reused else "OK"} {name}', flush=True)
+    if errors:
+        name, error = errors[0]
+        raise RuntimeError(f'{len(errors)} download(s) failed; successful files saved. First failure: {name}') from error
     print(f'Download verified: {inventory["total_bytes"]/1e6:.2f} MB, no 4D files.', flush=True)
 
 

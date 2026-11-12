@@ -211,7 +211,7 @@ def parse_losses(folder):
     return [rows[k] for k in sorted(rows) if 'train_loss' in rows[k] and 'val_loss' in rows[k]]
 
 
-def freeze_run(c):
+def freeze_run(c, evaluation=False):
     p = paths(c)
     pre = p['pre']/c['dataset_name']
     files = [Path(c['source_dataset'])/'download_manifest.json', pre/'splits_final.json', pre/f'{c["plans"]}.json', pre/'dataset_fingerprint.json',
@@ -227,6 +227,14 @@ def freeze_run(c):
               'code_sha256': code_sha, 'recipe_sha256': recipe_sha,
               'packages_sha256': hashlib.sha256(packages.encode()).hexdigest()}
     snapshot = p['run']/'config.snapshot.json'
+    if evaluation:
+        # Evaluation fixes must work on existing predictions without rewriting training provenance.
+        saved = json.loads(snapshot.read_text())
+        if {k: v for k, v in saved.items() if k != 'recipe_sha256'} != {
+                k: v for k, v in frozen.items() if k != 'recipe_sha256'}:
+            raise ValueError('Run configuration, training code, packages or prepared inputs changed.')
+        return {'training_recipe_sha256': saved['recipe_sha256'],
+                'evaluation_recipe_sha256': recipe_sha}
     if snapshot.exists():
         if json.loads(snapshot.read_text()) != frozen:
             raise ValueError('Run configuration or prepared inputs changed. Choose a new run_id.')

@@ -19,5 +19,6 @@
   ],
   "nsd_tolerance_mm": 2.0,
   "reproduction_notes": "Current-code ACDC baseline; 100 training patients / 200 ED-ES volumes. Official converter patient-grouped split (seed 1234); exact paper split and historical environment unverified. RTX3090 differs from paper A100.",
-  "minimum_free_gib": 5
+  "minimum_free_gib": 5,
+  "download_workers": 10
 }

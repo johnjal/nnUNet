@@ -1,0 +1,337 @@
+{
+  "copied": [
+    {
+      "source": "acdc-acdc-baseline-v1.runner.log",
+      "artifact": "artifacts/acdc-acdc-baseline-v1.runner.log",
+      "bytes": 55,
+      "sha256": "268ceb1734ae3517272858bb7fb20ae9e3718c787b0188b12aced363c5522372"
+    },
+    {
+      "source": "environment.lock.txt",
+      "artifact": "artifacts/environment.lock.txt",
+      "bytes": 3405,
+      "sha256": "aaec31fa59be676d13b0d9eeb01019337199f170982bb46cd1ab931d617608f1"
+    },
+    {
+      "source": "prepare.console.log",
+      "artifact": "artifacts/prepare.console.log",
+      "bytes": 671576,
+      "sha256": "e193c3067ea2bbd5d1493e5572234811ad6d8ec4f59638e81f13470104c48d1d"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/config.snapshot.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/config.snapshot.json",
+      "bytes": 1567,
+      "sha256": "931b37f008fe859379ab19d18d789907bf109fffde5d0e867fb32a3829ff9704"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/dataset.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/dataset.json",
+      "bytes": 178,
+      "sha256": "e39b85ee680453cf3956a7f0476e6c233e02efdbd39508dd821e4dd22c5f632b"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/dataset_fingerprint.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/dataset_fingerprint.json",
+      "bytes": 32157,
+      "sha256": "ffb400cdb40a6ac798d46897c24ee9cab3d54fb78610fb8c0f3a57d55b723a0b"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/download_manifest.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/download_manifest.json",
+      "bytes": 41110,
+      "sha256": "a6b976e5923ae9886e583f4f8a8e0836acf2bbfa75d76706fc65e82f4a68acd9"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/fold_0.status.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/fold_0.status.json",
+      "bytes": 286,
+      "sha256": "0058c765e8bdcf3ec2564dc5cd3a8ee0112aae4136cbdf0c6e792ef84ca45c8f"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/logs/fold_0.console.log",
+      "artifact": "artifacts/runs/acdc-baseline-v1/logs/fold_0.console.log",
+      "bytes": 402665,
+      "sha256": "38907d9cd1abcfd05e272d88ddc87126316c4f8c1f9b6ab2d4138b6a0bf2565a"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/logs/fold_0.gpu.csv",
+      "artifact": "artifacts/runs/acdc-baseline-v1/logs/fold_0.gpu.csv",
+      "bytes": 164367,
+      "sha256": "0d29270199909eb25259741e55ff2669ef3b750885dd2d6660dfd15cfcd86e10"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/manifest.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/manifest.json",
+      "bytes": 6305,
+      "sha256": "52bc0c3d4ca65ebdf6af183b772f78ab2c93ff5cbedfe9f1f0166456db580d59"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNetPlans.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNetPlans.json",
+      "bytes": 10426,
+      "sha256": "49ca5980a3314d14443842ac8c5d8af4a70e89a1cb5977ca37a16363c4cd3a8d"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/dataset.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/dataset.json",
+      "bytes": 209,
+      "sha256": "f72e1f41e68e23329ab100727b472d3654b0f91ec6e42624aca25ee101c16af4"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/dataset_fingerprint.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/dataset_fingerprint.json",
+      "bytes": 32157,
+      "sha256": "ffb400cdb40a6ac798d46897c24ee9cab3d54fb78610fb8c0f3a57d55b723a0b"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/debug.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/debug.json",
+      "bytes": 15928,
+      "sha256": "77ecf4ac9c10e878afd21c8da7c9d497f1d91a648edb244c6d9becf6822806e8"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/progress.png",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/progress.png",
+      "bytes": 492201,
+      "sha256": "328a33e305e85a5cba188bd3f818b6288bfcb7ce27fc13bfc5db0524ef105ebf"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/training_log_2026_11_11_03_49_15.txt",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/training_log_2026_11_11_03_49_15.txt",
+      "bytes": 389942,
+      "sha256": "cd926f35fa343309c7e119723b20d4abbbc5fcee0d6fcf50e08e0fdebb074062"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/summary.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/summary.json",
+      "bytes": 56265,
+      "sha256": "1ffc13da0682b4c67e463ca04adbb989808fad183507412e67980b9ecdfe826a"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/plans.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/plans.json",
+      "bytes": 10426,
+      "sha256": "49ca5980a3314d14443842ac8c5d8af4a70e89a1cb5977ca37a16363c4cd3a8d"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/reports/cases-folds-0.csv",
+      "artifact": "artifacts/runs/acdc-baseline-v1/reports/cases-folds-0.csv",
+      "bytes": 7482,
+      "sha256": "0a71650a8bf574d4c062387644ed7cf96a5f26743ceeb7e2c3a9a9a61866a3a2"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/reports/comparison-folds-0.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/reports/comparison-folds-0.json",
+      "bytes": 901,
+      "sha256": "cf8e52e5084393c7624af8b1c204158919790e981ed69d23b9bedd73562533ff"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/reports/folds-0.csv",
+      "artifact": "artifacts/runs/acdc-baseline-v1/reports/folds-0.csv",
+      "bytes": 54,
+      "sha256": "1ab04b303fe12a1e0d9b11022b6c28b9d86c611838233e99a0077c7260b7cfcc"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/reports/regions-folds-0.csv",
+      "artifact": "artifacts/runs/acdc-baseline-v1/reports/regions-folds-0.csv",
+      "bytes": 151,
+      "sha256": "2488363911b16e250fa3999006c6bb1df5edd2e209c8be1087a05ab2cc2cbb60"
+    },
+    {
+      "source": "runs/acdc-baseline-v1/splits_final.json",
+      "artifact": "artifacts/runs/acdc-baseline-v1/splits_final.json",
+      "bytes": 28243,
+      "sha256": "956979f7376bfc802e6a00d38b14843f9c1355f3aa8eeb296cb302e03d5abc8f"
+    }
+  ],
+  "excluded_run_files": [
+    {
+      "source": "gpu-0.lock",
+      "bytes": 0
+    },
+    {
+      "source": "prepare.lock",
+      "bytes": 0
+    },
+    {
+      "source": "run-acdc-baseline-v1.lock",
+      "bytes": 0
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/checkpoint_best.safetensors",
+      "bytes": 243154084
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/checkpoint_final.safetensors",
+      "bytes": 121839006
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient005_frame01.nii.gz",
+      "bytes": 3648
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient005_frame13.nii.gz",
+      "bytes": 3282
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient007_frame01.nii.gz",
+      "bytes": 2795
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient007_frame07.nii.gz",
+      "bytes": 2678
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient010_frame01.nii.gz",
+      "bytes": 3137
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient010_frame13.nii.gz",
+      "bytes": 2968
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient020_frame01.nii.gz",
+      "bytes": 2159
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient020_frame11.nii.gz",
+      "bytes": 2150
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient022_frame01.nii.gz",
+      "bytes": 1659
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient022_frame11.nii.gz",
+      "bytes": 1418
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient027_frame01.nii.gz",
+      "bytes": 2908
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient027_frame11.nii.gz",
+      "bytes": 2221
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient032_frame01.nii.gz",
+      "bytes": 2880
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient032_frame12.nii.gz",
+      "bytes": 2013
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient034_frame01.nii.gz",
+      "bytes": 2613
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient034_frame16.nii.gz",
+      "bytes": 2283
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient041_frame01.nii.gz",
+      "bytes": 1524
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient041_frame11.nii.gz",
+      "bytes": 1314
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient046_frame01.nii.gz",
+      "bytes": 2765
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient046_frame10.nii.gz",
+      "bytes": 2171
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient047_frame01.nii.gz",
+      "bytes": 2502
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient047_frame09.nii.gz",
+      "bytes": 2290
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient051_frame01.nii.gz",
+      "bytes": 2702
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient051_frame11.nii.gz",
+      "bytes": 2304
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient053_frame01.nii.gz",
+      "bytes": 2335
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient053_frame12.nii.gz",
+      "bytes": 2089
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient059_frame01.nii.gz",
+      "bytes": 2742
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient059_frame09.nii.gz",
+      "bytes": 2259
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient068_frame01.nii.gz",
+      "bytes": 1928
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient068_frame12.nii.gz",
+      "bytes": 1508
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient069_frame01.nii.gz",
+      "bytes": 1574
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient069_frame12.nii.gz",
+      "bytes": 1323
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient073_frame01.nii.gz",
+      "bytes": 1880
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient073_frame10.nii.gz",
+      "bytes": 1565
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient075_frame01.nii.gz",
+      "bytes": 3286
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient075_frame06.nii.gz",
+      "bytes": 2682
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient077_frame01.nii.gz",
+      "bytes": 2389
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient077_frame09.nii.gz",
+      "bytes": 1860
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient088_frame01.nii.gz",
+      "bytes": 3992
+    },
+    {
+      "source": "runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/patient088_frame12.nii.gz",
+      "bytes": 3222
+    }
+  ],
+  "excluded_directories": [
+    "nnUNet_raw",
+    "nnUNet_preprocessed",
+    "cache",
+    "metadata"
+  ],
+  "note": "Run snapshots retain preparation metadata. Hidden files, locks, checkpoint weights and NIfTI volumes are excluded."
+}

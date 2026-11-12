@@ -37,6 +37,8 @@ KiTS와 독립된 실험입니다. 기존 KiTS 코드, 데이터, 설정을 변�
 
 `data_manifest.json`은 공식 파일 400개의 이름, item ID, URL, 크기를 고정한 메타데이터입니다. 실제 영상은 저장소에 포함하지 않습니다.
 
+- 최대 **10개 파일을 동시 다운로드**합니다. 기존 config.server.json에 download_workers가 없어도 기본값 10을 사용합니다. 필요하면 1–10으로 낮출 수 있습니다.
+- 완료 파일을 재사용하며, 실패한 파일이 있어도 다른 성공 파일의 기록은 보존합니다. manifest는 메인 스레드에서만 저장합니다.
 - 4D 영상, 시험 환자 50명, zip 아카이브를 다운로드하지 않습니다.
 - 공식 프레임을 `nnUNet_raw/Dataset027_ACDC/imagesTr` 또는 `labelsTr`에 바로 다운로드합니다. 원본을 별도로 복사하지 않습니다.
 - 파일은 `.partial`로 받은 뒤 크기와 gzip CRC를 확인하고 최종 이름으로 교체합니다.
@@ -78,6 +80,10 @@ KiTS와 독립된 실험입니다. 기존 KiTS 코드, 데이터, 설정을 변�
 
 설정 파일은 실행 비활성화 상태로 배포합니다. 서버에서 설치한 실제 Git 커밋과 패키지 목록을 기록합니다. 같은 run_id에서는 설정/코드/패키지/plans/splits가 변경되면 재사용을 거부하며 fold 목록 확장만 허용합니다.
 
+## 저장된 실험 결과
+
+[docs/README.md](docs/README.md)에 fold 0의 1,000 epoch 완료 결과, 평가표, 학습/GPU 차트와 예측 예시를 정리했습니다. 원본 영상·예측 볼륨·체크포인트 없이 읽을 수 있습니다.
+
 ## 로컬 검증
 
 표준 라이브러리 기반 검사(네트워크·GPU 없음):
@@ -86,4 +92,14 @@ KiTS와 독립된 실험입니다. 기존 KiTS 코드, 데이터, 설정을 변�
 PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s experiments/acdc/tests -v
 ```
 
-numpy/nibabel/pandas/surface-distance가 있으면 합성 NIfTI 평가 테스트도 실행합니다. 없으면 해당 테스트만 건너뜁니다. 실제 다운로드·전처리·CUDA 학습은 GPU 서버에서 검증해야 합니다.
+numpy/nibabel/pandas/surface-distance/SimpleITK가 있으면 합성 NIfTI 평가 테스트도 실행합니다. 없으면 해당 테스트만 건너뜁니다. 실제 다운로드·전처리·CUDA 학습은 GPU 서버에서 검증해야 합니다.
+
+## ACDC 평가의 geometry mismatch 수정
+
+ACDC 원본의 sform과 qform이 달라 nibabel의 affine 비교가 SimpleITK로 내보낸 정상 예측을 거부할 수 있습니다. 평가는 학습·예측과 같은 SimpleITK로 읽고 크기, spacing, origin, direction을 검사합니다. 실제 좌표 불일치는 계속 오류 처리하며 원본 수정이나 resampling을 하지 않습니다. NSD의 spacing도 배열의 z,y,x 순서에 맞춥니다.
+
+이미 학습한 서버에는 `scripts/evaluate_regions.py`와 `scripts/workflow.py`를 함께 반영하고 03번 커널을 재시작한 뒤 처음부터 실행하세요. 재학습이나 재전처리는 필요하지 않습니다. 기존 학습 snapshot은 삭제·갱신하지 않습니다. 평가에 한해 실험 스크립트 해시 변경을 허용하고 학습 당시/평가 당시 해시를 결과 JSON에 기록합니다. 설정, nnUNet 학습 코드, 패키지, plans/splits 및 준비 입력의 검증은 유지합니다. 학습 재개 경로의 엄격한 해시 검증도 그대로입니다. 기존 run 평가 시 학습 당시 config.server.json을 유지하세요.
+
+## 기존 순차 다운로드에서 전환
+
+이미 실행 중인 프로세스는 파일을 수정해도 바뀌지 않습니다. 서버 터미널에서 `tmux attach -t acdc-prepare`로 접속해 Ctrl+C로 기존 준비 작업을 중단하고 종료를 확인하세요. 변경 파일을 서버에 반영한 뒤 01번의 다운로드/전처리 시작 셀을 다시 실행하면 완료 파일을 재사용하고 나머지를 10개씩 처리합니다. 서버의 Git 커밋도 업데이트했다면 실행 전 config.server.json의 expected_git_commit을 검토 후 현재 커밋으로 갱신해야 합니다.

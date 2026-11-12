@@ -1,0 +1,4 @@
+# Small, curated result artifacts belong in version control.
+!*.png
+!*.txt
+!*.log

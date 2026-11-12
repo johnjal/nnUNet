@@ -1,0 +1,31 @@
+{
+  "configuration": {
+    "storage_root": "/root/acdc-data",
+    "source_dataset": "/root/acdc-data/metadata/acdc",
+    "run_id": "acdc-baseline-v1",
+    "expected_git_commit": "22466dd87b2c4af4f9e9af4b9ff1e874dd70adfc",
+    "dataset_id": 27,
+    "dataset_name": "Dataset027_ACDC",
+    "expected_cases": 200,
+    "configuration": "3d_fullres",
+    "trainer": "nnUNetTrainer",
+    "plans": "nnUNetPlans",
+    "gpu": "0",
+    "preprocessing_workers": 4,
+    "augmentation_workers": 4,
+    "compile": false,
+    "nsd_tolerance_mm": 2.0,
+    "reproduction_notes": "Current-code ACDC baseline; 100 training patients / 200 ED-ES volumes. Official converter patient-grouped split (seed 1234); exact paper split and historical environment unverified. RTX3090 differs from paper A100.",
+    "minimum_free_gib": 5
+  },
+  "input_sha256": {
+    "download_manifest.json": "a6b976e5923ae9886e583f4f8a8e0836acf2bbfa75d76706fc65e82f4a68acd9",
+    "splits_final.json": "956979f7376bfc802e6a00d38b14843f9c1355f3aa8eeb296cb302e03d5abc8f",
+    "nnUNetPlans.json": "49ca5980a3314d14443842ac8c5d8af4a70e89a1cb5977ca37a16363c4cd3a8d",
+    "dataset_fingerprint.json": "ffb400cdb40a6ac798d46897c24ee9cab3d54fb78610fb8c0f3a57d55b723a0b",
+    "dataset.json": "e39b85ee680453cf3956a7f0476e6c233e02efdbd39508dd821e4dd22c5f632b"
+  },
+  "code_sha256": "bf5c635daf9c0ea2cab0e554d936aa1d570f7bdab72e43a75afef0202e05040d",
+  "recipe_sha256": "fe6db40a071fc9f27ddd01341457672d16d3ea436fff3c5c27401d5a8e5d2618",
+  "packages_sha256": "aaec31fa59be676d13b0d9eeb01019337199f170982bb46cd1ab931d617608f1"
+}

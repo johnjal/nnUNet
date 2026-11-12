@@ -1,0 +1,10 @@
+{
+  "epochs": 1000,
+  "runner_hours": 19.752609221140542,
+  "median_epoch_seconds": 69.96,
+  "gpu_peak_memory_mib": 8872.0,
+  "gpu_median_utilization_percent": 100.0,
+  "gpu_samples": 4727,
+  "last_train_loss": -0.98,
+  "last_val_loss": -0.8926
+}

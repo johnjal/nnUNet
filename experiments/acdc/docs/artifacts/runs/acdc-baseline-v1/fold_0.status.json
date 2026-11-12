@@ -1,0 +1,19 @@
+{
+  "fold": 0,
+  "command": [
+    "nnUNetv2_train",
+    "27",
+    "3d_fullres",
+    "0",
+    "-tr",
+    "nnUNetTrainer",
+    "-p",
+    "nnUNetPlans",
+    "-device",
+    "cuda"
+  ],
+  "status": "completed",
+  "started": 1794368952.7008548,
+  "pid": 16094,
+  "ended": 1794440062.094051
+}

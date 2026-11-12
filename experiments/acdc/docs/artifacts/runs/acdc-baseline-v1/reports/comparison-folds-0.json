@@ -1,0 +1,19 @@
+{
+  "complete_5fold": false,
+  "folds": [
+    0
+  ],
+  "dice_percent": 91.71181686613436,
+  "nsd_percent": 95.05106998047216,
+  "paper_dice_percent": 91.54,
+  "paper_nsd_percent": 94.93,
+  "aggregation": "case mean per region, then region mean per fold, then equal fold mean; both-empty excluded",
+  "checkpoint": "final",
+  "nsd_tolerance_mm": 2.0,
+  "geometry_reader": "SimpleITK; arrays and spacing in z,y,x order; no resampling",
+  "evaluation_provenance": {
+    "training_recipe_sha256": "fe6db40a071fc9f27ddd01341457672d16d3ea436fff3c5c27401d5a8e5d2618",
+    "evaluation_recipe_sha256": "fb186416623270ad3082a6d93738a0d1b588b9936e06977d0d1c69908ed4ecb1"
+  },
+  "limitations": "Current-code ACDC baseline; 100 training patients / 200 ED-ES volumes. Official converter patient-grouped split (seed 1234); exact paper split and historical environment unverified. RTX3090 differs from paper A100."
+}
