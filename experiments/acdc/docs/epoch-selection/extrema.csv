@@ -1,0 +1,4 @@
+metric,epoch,epoch_index,value
+minimum validation loss,223,222,-0.9016
+maximum pseudo-mIoU (%),223,222,87.04832230446846
+minimum pseudo-mIoU (%) [reference only],1,0,18.90841646458957

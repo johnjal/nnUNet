@@ -1,0 +1,37 @@
+{
+  "epochs_observed": 1000,
+  "candidate_epoch": 250,
+  "candidate_updates_at_250_steps_per_epoch": 62500,
+  "last_loss_record_epoch": 223,
+  "minimum_val_loss": -0.9016,
+  "last_miou_record_epoch": 223,
+  "maximum_pseudo_miou_pct": 87.04832230446846,
+  "minimum_pseudo_miou_epoch": 1,
+  "minimum_pseudo_miou_pct": 18.90841646458957,
+  "loss_record_wait_at_candidate": 27,
+  "miou_record_wait_at_candidate": 27,
+  "loss_record_wait_at_end": 777,
+  "miou_record_wait_at_end": 777,
+  "recorded_epoch_hours_to_candidate": 4.881036111111111,
+  "recorded_epoch_hours_total": 19.48825277777778,
+  "recorded_epoch_time_reduction_percent": 74.95395730561901,
+  "window": 50,
+  "sources": [
+    {
+      "path": "experiments/acdc/docs/artifacts/runs/acdc-baseline-v1/nnUNet_results/Dataset027_ACDC/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/training_log_2026_11_11_03_49_15.txt",
+      "sha256": "cd926f35fa343309c7e119723b20d4abbbc5fcee0d6fcf50e08e0fdebb074062"
+    }
+  ],
+  "packages": {
+    "numpy": "2.5.5",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.2"
+  },
+  "limitations": [
+    "Single ACDC fold 0 baseline; not a universal convergence budget.",
+    "Rounded patch Dice converted per class to approximate foreground pseudo-mIoU.",
+    "A shorter total epoch schedule changes polynomial learning-rate decay.",
+    "Recorded epoch durations exclude final full-volume inference and setup.",
+    "Historical best metric does not imply that an epoch-specific checkpoint was saved."
+  ]
+}

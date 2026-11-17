@@ -84,6 +84,20 @@ KiTS와 독립된 실험입니다. 기존 KiTS 코드, 데이터, 설정을 변�
 
 [docs/README.md](docs/README.md)에 fold 0의 1,000 epoch 완료 결과, 평가표, 학습/GPU 차트와 예측 예시를 정리했습니다. 원본 영상·예측 볼륨·체크포인트 없이 읽을 수 있습니다.
 
+## 전체 데이터 loss 분석 (새 서버에서도 실행 가능)
+
+[04_loss_analysis.ipynb](notebooks/04_loss_analysis.ipynb)는 저장소 옆에 복사한 `acdc-data`를 자동으로 찾습니다. 초기화·현재 venv 패키지 설치 셀을 포함하며 기존 서버의 절대 경로 설정에 의존하지 않습니다. 새 서버의 venv 커널에서 `INSTALL_PACKAGES=True`로 설치한 뒤 커널을 재시작하고, `RUN_INFERENCE=True`로 설정하면 저장된 fold 0 모델로 train 160개와 validation 40개의 확률/마스크를 생성합니다. 기존 결과는 유지하며, 완료한 사례는 재실행 시 건너뜁니다. 추론은 Linux/CUDA 서버에서만 허용합니다.
+
+이후 전체 볼륨 평가 loss(`CE − foreground soft Dice`)의 histogram, train/validation 비교, 클래스별 오류, 높은 loss 사례 목록을 확인할 수 있습니다. 환자 번호와 ED/ES frame을 선택하면 슬라이더 또는 슬라이스 번호로 MRI·정답·예측·오류·CE 지도를 탐색합니다. 이 값은 학습 당시 패치/deep-supervision loss와 다릅니다.
+
+새 대용량 결과는 `acdc-data/runs/<run_id>/loss_analysis/`에만 저장됩니다. 확률 출력이 있는 경우 분석/시각화는 CPU에서도 가능합니다. 원본 raw와 모델·분할 파일이 필요하며, 원본 폴더를 수정하거나 다시 다운로드하지 않습니다.
+
+## 학습 epoch 선택 근거
+
+[05_epoch_selection.ipynb](notebooks/05_epoch_selection.ipynb)는 빈 로컬 venv에서 시작할 수 있도록 커널 등록 안내와 분석 패키지 설치 셀을 포함합니다. 보관된 학습 로그만 읽으며 GPU·PyTorch·원본 영상은 필요하지 않습니다. Validation loss 최솟값, 클래스별 Dice에서 변환한 foreground pseudo-mIoU 최댓값/최솟값, 기록 갱신 위치와 경과 epoch를 표시합니다. 50 epoch 평균과 후보 250 epoch의 학습 시간을 함께 비교합니다.
+
+실행하면 `docs/epoch-selection/`에 PNG/PDF 그래프, CSV, 출처 해시가 포함된 JSON과 근거 Markdown을 저장합니다. [생성된 분석 보고서](docs/epoch-selection/README.md)에서도 확인할 수 있습니다. 지표는 패치 기반이며, 기존 best 체크포인트의 EMA 선택 기준과는 구분됩니다.
+
 ## 로컬 검증
 
 표준 라이브러리 기반 검사(네트워크·GPU 없음):
@@ -103,3 +117,17 @@ ACDC 원본의 sform과 qform이 달라 nibabel의 affine 비교가 SimpleITK로
 ## 기존 순차 다운로드에서 전환
 
 이미 실행 중인 프로세스는 파일을 수정해도 바뀌지 않습니다. 서버 터미널에서 `tmux attach -t acdc-prepare`로 접속해 Ctrl+C로 기존 준비 작업을 중단하고 종료를 확인하세요. 변경 파일을 서버에 반영한 뒤 01번의 다운로드/전처리 시작 셀을 다시 실행하면 완료 파일을 재사용하고 나머지를 10개씩 처리합니다. 서버의 Git 커밋도 업데이트했다면 실행 전 config.server.json의 expected_git_commit을 검토 후 현재 커밋으로 갱신해야 합니다.
+
+## 자동 설정 내부 코드 분석
+
+[자동 결정 항목과 ACDC 적용 결과](docs/automatic-decisions.md)에 데이터 기반 계획, 증강의 조건부/고정 설정, patch sampling, loss, 학습, inference 및 별도 모델 선택 기능을 코드 근거와 함께 정리했습니다.
+
+## 증강 테마 단독 비교
+
+[06_augmentation_themes.ipynb](notebooks/06_augmentation_themes.ipynb)는 fold 0·250 epoch로 `spatial`(회전/mirror/scale), `quality`(noise/blur/low-resolution), `intensity`(brightness/contrast)를 하나씩만 켜서 비교합니다. 기존 전처리와 기본 학습 설정을 공유하고 Gamma/elastic은 모두 끕니다. 선택한 증강의 확률·범위는 기본 trainer 값을 유지합니다. spatial 외 테마는 공간 변환 확률을 0으로 두되 최종 patch crop 처리는 유지합니다.
+
+서버에서 초기 설정 후 `START_SUITE=True`로 실행하면 tmux가 세 테마와 무증강 대조군, 총 네 실험을 순차 진행합니다. 중단 시 `RESUME=True`로 다시 시작할 수 있습니다. 각 결과는 `acdc-data/runs/<SUITE_ID>-<theme>/`에 저장되고, 전체 상태·비교 CSV/JSON은 `acdc-data/augmentation_suites/<SUITE_ID>/`에 저장됩니다. 노트북에서 train/validation loss와 최종 전체 볼륨 Dice·mIoU를 확인합니다. `INCLUDE_NO_AUG_CONTROL=True`가 기본값이므로 증강 없는 대조군도 함께 실행합니다.
+
+각 실험은 새 무작위 초기화이며 단일 seed를 맞추는 변경은 하지 않습니다. 최종 평가는 모든 테마에서 공통 default mirroring TTA를 유지합니다. 250 epoch 일정은 기존 1,000 epoch의 앞부분과 LR 일정이 다르며, 단일 fold의 결과만으로 통계적 효과를 확정하지 않습니다. 모델별 실제 GPU 학습·최종 평가는 서버에서 실행해야 합니다.
+
+구현: [전용 trainer](../../nnunetv2/training/nnUNetTrainer/variants/data_augmentation/nnUNetTrainerACDCTheme250.py), [순차 큐](scripts/run_augmentation_suite.py). 기본 trainer와 기존 baseline 실행 설정은 변경하지 않았습니다.
