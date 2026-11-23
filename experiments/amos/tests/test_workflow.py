@@ -55,6 +55,34 @@ class WorkflowTests(unittest.TestCase):
             self.assertEqual(w.read(p['raw']/'dataset.json')['channel_names'],{'0':'MRI'})
             self.assertEqual(w.read(p['pre']/f"{p['plans']}.json")['configurations']['3d_fullres']['batch_size'],2)
 
+    def test_prepare_50_10_isolated_and_off_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            c=dict(config(tmp),split_mode='train50_val10',split_seed=12345);p=w.locations(c)
+            self.assertEqual(w.themes(c),('off',))
+            self.assertNotEqual(p['pre'],w.locations(config(tmp))['pre'])
+            files=[]
+            for split,ids in [('Tr',range(507,547)),('Va',range(547,567))]:
+                for folder in ['images'+split,'labels'+split]:
+                    for i in ids:
+                        f=p['source']/folder/f'amos_{i:04d}.nii.gz'
+                        f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes(str(i).encode())
+                        files.append(dict(path=str(f.relative_to(p['root'])),sha256=w.sha(f)))
+            w.write(p['source']/'dataset.json',{'labels':{'0':'background','1':'organ'}})
+            w.write(p['root']/'download_manifest.json',dict(counts={'imagesTr':40,'labelsTr':40,'imagesVa':20,'labelsVa':20},files=files))
+            def cli(c,name,*args):
+                if name=='nnUNetv2_plan_and_preprocess':
+                    w.write(p['pre']/f"{p['plans']}.json",{'configurations':{'3d_fullres':{'batch_size':9,'patch_size':[16]*3,'spacing':[1]*3}}})
+            with patch.object(w,'cli',cli),patch.object(w,'free_space'):
+                w.prepare(c)
+            split=w.read(p['pre']/'splits_final.json')[0]
+            self.assertEqual((len(split['train']),len(split['val'])),(50,10))
+            self.assertTrue({f'amos_{i:04d}' for i in range(507,547)} <= set(split['train']))
+            self.assertFalse(set(split['train']) & set(split['val']))
+            f=p['raw']/'imagesTr/amos_0507_0000.nii.gz'
+            self.assertEqual(f.stat().st_ino,(p['source']/'imagesTr/amos_0507.nii.gz').stat().st_ino)
+            self.assertEqual(w.read(p['raw']/'dataset.json')['channel_names'],{'0':'MRI'})
+            self.assertEqual(w.read(p['pre']/f"{p['plans']}.json")['configurations']['3d_fullres']['batch_size'],2)
+
     def test_queue_probes_both_before_training_and_stops_on_failure(self):
         import torch
         for fail in (False,True):

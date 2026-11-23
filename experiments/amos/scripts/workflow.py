@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import re
+import random
 import shutil
 import signal
 import subprocess
@@ -35,6 +36,10 @@ def sha(path):
 
 
 def validate(c):
+    if c.get('split_mode') not in (None, 'train50_val10'):
+        raise ValueError('Unknown split mode')
+    if c.get('split_mode') == 'train50_val10' and type(c.get('split_seed')) is not int:
+        raise ValueError('split_seed must be an integer')
     if not re.fullmatch(r'[A-Za-z0-9_-]+', c['run_id']):
         raise ValueError('Invalid run_id')
     if not re.fullmatch(r'\d+', c['gpu']):
@@ -51,12 +56,19 @@ def validate(c):
     return c
 
 
+def themes(c):
+    return ('off',) if c.get('split_mode') == 'train50_val10' else ('off', 'on')
+
+
 def locations(c):
     root = Path(c['storage_root'])
     plans = f"nnUNetPlansAMOSMRI{c['planner_gb']:g}GBBS{c['batch_size']}"
     suite = root / 'experiments' / c['run_id']
+    pre_root = root/'nnUNet_preprocessed'
+    if c.get('split_mode') == 'train50_val10':
+        pre_root = root/f"nnUNet_preprocessed_train50val10_seed{c['split_seed']}"
     return dict(root=root, source=root/'amos22', raw=root/'nnUNet_raw'/DATASET,
-                pre=root/'nnUNet_preprocessed'/DATASET, suite=suite,
+                pre=pre_root/DATASET, suite=suite,
                 results=suite/'nnUNet_results', plans=plans)
 
 
@@ -88,8 +100,9 @@ def call(c, command):
     print('Running:', ' '.join(map(str,command)), flush=True)
     proc = subprocess.Popen(list(map(str,command)), env=environment(c))
     try:
-        if proc.wait():
-            raise RuntimeError('Command failed; inspect runner.log. OOM: set AMP=True and a NEW RUN_ID; do not resume FP32 weights.')
+        code = proc.wait()
+        if code:
+            raise RuntimeError(f'Command failed (exit {code}): {command[0]}. See the preceding error in runner.log; this does not necessarily indicate CUDA OOM.')
     except BaseException:
         if proc.poll() is None:
             proc.terminate()
@@ -172,6 +185,23 @@ def prepare(c):
     dataset = dict(channel_names={'0':'MRI'}, labels={v:int(k) for k,v in original['labels'].items()},
                    numTraining=60, file_ending='.nii.gz', overwrite_image_reader_writer='NibabelIOWithReorient')
     frozen(p['raw']/'dataset.json', dataset)
+    if c.get('split_mode') == 'train50_val10':
+        # Keep the original 40 training cases; move a fixed random 10 of 20 validation cases.
+        pool = sorted(splits['val'])
+        random.Random(c['split_seed']).shuffle(pool)
+        splits = dict(train=sorted(splits['train'] + pool[:10]), val=sorted(pool[10:]))
+        # Separate split directory: never change the old experiment's split.
+        # Completed preprocessing is independent of the training split; reuse via hard links.
+        old = p['root']/'nnUNet_preprocessed'/DATASET
+        old_marker = old/f"{p['plans']}.complete.json"
+        if old_marker.exists() and not (p['pre']/f"{p['plans']}.complete.json").exists():
+            saved = read(old_marker)
+            if saved['spec'] != spec or saved['plans_sha256'] != sha(old/f"{p['plans']}.json"):
+                raise ValueError('Original preprocessing provenance differs; cannot reuse')
+            for source in sorted(old.rglob('*')):
+                if source.is_file() and source.name != 'splits_final.json' and not source.name.endswith('.complete.json'):
+                    link_original(source, p['pre']/source.relative_to(old))
+            write(p['pre']/old_marker.name, saved)
     frozen(p['pre']/'splits_final.json', [splits])
     marker = p['pre']/f"{p['plans']}.complete.json"
     if marker.exists():
@@ -267,13 +297,13 @@ def best(c, theme):
 
 def comparison(c):
     rows=[]
-    for theme in ('off','on'):
+    for theme in themes(c):
         for checkpoint,folder in [('final','validation'),('best','validation_best')]:
             path=model_dir(c,theme)/'fold_0'/folder/'summary.json'
             if path.exists():
                 summary=read(path)
-                if len(summary['metric_per_case']) != 20:
-                    raise ValueError('Expected 20 validation cases')
+                if len(summary['metric_per_case']) != len(read(locations(c)['pre']/'splits_final.json')[0]['val']):
+                    raise ValueError('Validation case count differs from frozen split')
                 rows.append(dict(augmentation=theme,checkpoint=checkpoint,
                                  Dice=summary['foreground_mean']['Dice'],IoU=summary['foreground_mean']['IoU']))
     p=locations(c)['suite']
@@ -316,12 +346,12 @@ def run(c, resume=False):
             write(p['suite']/'status.json',dict(status='preparing'))
             prepare(c)
             recipe(c)
-            # Probe both variants before either 250-epoch run; isolated output avoids resumable fake checkpoints.
-            for theme in ('off','on'):
+            # Probe selected variants before training; isolated output avoids resumable fake checkpoints.
+            for theme in themes(c):
                 if not (p['suite']/f'smoke-{theme}.json').exists():
                     write(p['suite']/'status.json',dict(status='smoke',theme=theme))
                     call(c,[sys.executable,'-B',__file__,'--config',p['suite']/'config.json','--smoke',theme])
-            for theme in ('off','on'):
+            for theme in themes(c):
                 free_space(c)
                 write(p['suite']/'status.json',dict(status='training',theme=theme))
                 fold=model_dir(c,theme)/'fold_0'
@@ -337,8 +367,9 @@ def run(c, resume=False):
                 comparison(c)
             write(p['suite']/'status.json',dict(status='completed'))
         except BaseException as error:
-            write(p['suite']/'status.json',dict(status='failed',error=str(error),
-                  oom_help='If CUDA OOM: AMP=True + NEW RUN_ID. Prepared data reused. No automatic precision switch.'))
+            state = read(p['suite']/'status.json') if (p['suite']/'status.json').exists() else {}
+            write(p['suite']/'status.json',dict(status='failed',stage=state.get('status'),error=str(error),
+                  help='Errno 28 / No space left: free disk space or increase storage; AMP does not help. Only CUDA out of memory: AMP=True + NEW RUN_ID. See runner.log.'))
             raise
 
 
