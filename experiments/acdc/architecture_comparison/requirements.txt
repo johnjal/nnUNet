@@ -1,0 +1,6 @@
+# Install this file together with -e REPO and the ACDC server requirements.
+# Pin torch separately using the CUDA wheel index in notebook 07.
+monai==1.5.1
+einops==0.8.1
+batchgeneratorsv2==0.3.8
+dynamic-network-architectures==0.4.4

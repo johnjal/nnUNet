@@ -98,6 +98,7 @@ ENV/
 *.jpeg
 .idea
 *.txt
+!experiments/acdc/architecture_comparison/requirements.txt
 .idea/*
 *.png
 # *.nii.gz  # nifti files needed for example_data for github actions tests
