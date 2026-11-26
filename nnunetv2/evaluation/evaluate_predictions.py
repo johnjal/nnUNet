@@ -249,7 +249,8 @@ def compute_metrics_on_folder(folder_ref: str, folder_pred: str, output_file: st
             if k == 0 or k == '0':
                 continue
             values.append(means[k][m])
-        foreground_mean[m] = np.mean(values)
+        valid_values = [v for v in values if not np.isnan(v)]
+        foreground_mean[m] = np.mean(valid_values) if valid_values else np.nan
 
     [recursive_fix_for_json_export(i) for i in results]
     recursive_fix_for_json_export(means)

@@ -4,6 +4,7 @@ import csv
 import hashlib
 import importlib.metadata
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -295,21 +296,36 @@ def best(c, theme):
                                str(p['pre']/f"{p['plans']}.json"),num_processes=c['workers'],chill=True)
 
 
+def repair_foreground_mean(summary):
+    """Macro average over evaluable organs, preserving missing-organ NaNs and real zeros."""
+    organs = [metrics for label, metrics in summary['mean'].items() if str(label) != '0']
+    counts = {}
+    for metric in summary['foreground_mean']:
+        values = [organ[metric] for organ in organs if not math.isnan(organ[metric])]
+        summary['foreground_mean'][metric] = sum(values)/len(values) if values else float('nan')
+        counts[metric] = len(values)
+    summary['foreground_valid_class_counts'] = counts
+    return summary
+
+
 def comparison(c):
     rows=[]
     for theme in themes(c):
         for checkpoint,folder in [('final','validation'),('best','validation_best')]:
             path=model_dir(c,theme)/'fold_0'/folder/'summary.json'
             if path.exists():
-                summary=read(path)
+                summary=repair_foreground_mean(read(path))
                 if len(summary['metric_per_case']) != len(read(locations(c)['pre']/'splits_final.json')[0]['val']):
                     raise ValueError('Validation case count differs from frozen split')
+                write(path, summary)
                 rows.append(dict(augmentation=theme,checkpoint=checkpoint,
+                                 Dice_valid_organs=summary['foreground_valid_class_counts']['Dice'],
+                                 IoU_valid_organs=summary['foreground_valid_class_counts']['IoU'],
                                  Dice=summary['foreground_mean']['Dice'],IoU=summary['foreground_mean']['IoU']))
     p=locations(c)['suite']
     write(p/'comparison.json',rows)
     with (p/'comparison.csv').open('w') as f:
-        writer=csv.DictWriter(f,fieldnames=['augmentation','checkpoint','Dice','IoU'])
+        writer=csv.DictWriter(f,fieldnames=['augmentation','checkpoint','Dice','IoU','Dice_valid_organs','IoU_valid_organs'])
         writer.writeheader();writer.writerows(rows)
     return rows
 

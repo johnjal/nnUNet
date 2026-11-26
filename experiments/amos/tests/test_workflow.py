@@ -112,6 +112,21 @@ class WorkflowTests(unittest.TestCase):
                         self.assertEqual([e[0] for e in events],['smoke','smoke','train','best','train','best'])
                 self.assertEqual(w.read(w.locations(c)['suite']/'status.json')['status'], 'failed' if fail else 'completed')
 
+    def test_foreground_mean_ignores_missing_but_keeps_zero(self):
+        import math
+        summary = {'mean': {'0': {'Dice': 1., 'IoU': 1.},
+                            '1': {'Dice': .8, 'IoU': .6},
+                            '2': {'Dice': 0., 'IoU': 0.},
+                            '3': {'Dice': float('nan'), 'IoU': float('nan')}},
+                   'foreground_mean': {'Dice': float('nan'), 'IoU': float('nan')}}
+        fixed = w.repair_foreground_mean(summary)
+        self.assertAlmostEqual(fixed['foreground_mean']['Dice'], .4)
+        self.assertAlmostEqual(fixed['foreground_mean']['IoU'], .3)
+        self.assertEqual(fixed['foreground_valid_class_counts']['Dice'], 2)
+        self.assertTrue(math.isnan(fixed['mean']['3']['Dice']))
+        fixed['mean'] = {'3': fixed['mean']['3']}
+        self.assertTrue(math.isnan(w.repair_foreground_mean(fixed)['foreground_mean']['Dice']))
+
     def test_notebook_clean_and_valid(self):
         nb=json.loads((REPO/'experiments/amos/notebooks/01_mri_augmentation_comparison.ipynb').read_text())
         for cell in nb['cells']:
