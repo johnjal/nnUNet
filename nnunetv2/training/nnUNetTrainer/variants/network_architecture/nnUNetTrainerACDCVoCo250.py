@@ -1,5 +1,8 @@
 """ACDC no-augmentation Swin control/VoCo; nnU-Net owns training and inference."""
 import json
+import faulthandler
+import sys
+import time
 import os
 import random
 from pathlib import Path
@@ -91,15 +94,58 @@ class nnUNetTrainerACDCSwinScratchNoAug250(nnUNetTrainerACDCUNetNoDS250):
         self.inference_allowed_mirroring_axes = None
         return (*result[:3], None)
 
+    def _phase(self, message):
+        self.print_to_log_file(message)
+        sys.stdout.flush()
+
+    def get_dataloaders(self):
+        self._phase('[startup] Waiting for train/validation loaders and their first batches')
+        loaders = super().get_dataloaders()
+        self._phase('[startup] Both loaders ready')
+        return loaders
+
+    def plot_network_architecture(self):
+        # hiddenlayer tracing is optional and can run expensive GPU forwards before epoch 0.
+        self._phase('[startup] Skipped optional hiddenlayer network graph')
+
+    def _save_debug_information(self):
+        self._phase('[startup] Saving debug information')
+        super()._save_debug_information()
+        self._phase('[startup] Debug information saved')
+
     def on_train_start(self):
-        super().on_train_start()
-        if self.use_voco and self.current_epoch == 0:
-            checkpoint = os.environ.get('ACDC_VOCO_CHECKPOINT')
-            if not checkpoint:
-                raise RuntimeError('ACDC_VOCO_CHECKPOINT is required for fresh VoCo training')
-            report = load_voco(self.network, checkpoint)
-            (Path(self.output_folder) / 'voco-load-report.json').write_text(json.dumps(report, indent=2))
-            self.print_to_log_file('Loaded complete VoCo Swin encoder:', report['loaded_elements'])
+        self._phase('[startup] Preparing training; stack trace every 120s until ready')
+        faulthandler.dump_traceback_later(120, repeat=True)
+        try:
+            super().on_train_start()
+            if self.use_voco and self.current_epoch == 0:
+                checkpoint = os.environ.get('ACDC_VOCO_CHECKPOINT')
+                if not checkpoint:
+                    raise RuntimeError('ACDC_VOCO_CHECKPOINT is required for fresh VoCo training')
+                self._phase('[startup] Loading VoCo encoder')
+                report = load_voco(self.network, checkpoint)
+                (Path(self.output_folder) / 'voco-load-report.json').write_text(json.dumps(report, indent=2))
+                self.print_to_log_file('Loaded complete VoCo Swin encoder:', report['loaded_elements'])
+            self._phase('[startup] Ready for epoch loop')
+        finally:
+            faulthandler.cancel_dump_traceback_later()
+
+    def on_train_epoch_start(self):
+        super().on_train_epoch_start()
+        self._progress_steps = 0
+        self._progress_started = time.monotonic()
+        self._phase(f'[train] Epoch {self.current_epoch}: waiting for first batch')
+
+    def train_step(self, batch):
+        if self._progress_steps == 0:
+            self._phase('[train] First batch received; starting forward/backward')
+        result = super().train_step(batch)
+        self._progress_steps += 1
+        if self._progress_steps == 1 or self._progress_steps % 25 == 0:
+            elapsed = time.monotonic() - self._progress_started
+            self._phase(f'[train] Epoch {self.current_epoch}: '
+                        f'{self._progress_steps}/{self.num_iterations_per_epoch} steps; {elapsed:.1f}s')
+        return result
 
 
 class nnUNetTrainerACDCSwinVoCoNoAug250(nnUNetTrainerACDCSwinScratchNoAug250):

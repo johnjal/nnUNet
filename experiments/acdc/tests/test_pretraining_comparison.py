@@ -122,6 +122,13 @@ class ProtocolTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'conditions differ'):
                 runner.write_comparison(suite,roots)
 
+    def test_allocator_is_set_in_initialization_before_runner_import(self):
+        nb=json.loads((REPO/'experiments/acdc/notebooks/08_noaug_swin_voco.ipynb').read_text())
+        codes=[''.join(c['source']) for c in nb['cells'] if c['cell_type']=='code']
+        self.assertIn('os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"', codes[0])
+        self.assertNotIn('import torch', codes[0])
+        self.assertIn('def launch_task', ''.join(codes[1:]))
+
     def test_notebook_is_clean_and_cells_compile(self):
         nb=json.loads((REPO/'experiments/acdc/notebooks/08_noaug_swin_voco.ipynb').read_text())
         for cell in nb['cells']:
